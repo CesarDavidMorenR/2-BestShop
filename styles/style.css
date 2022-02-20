@@ -1,17 +1,25 @@
 *{
    margin: 0;
    padding: 0; 
+   box-sizing: border-box;
 }
 
-*{
-  box-sizing: border-box;
-}
 
 header {
    border-bottom: 2px solid gray;
    display: flex;
    justify-content: space-between;
 
+}
+
+body{
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column
+}
+
+.princi{
+   text-align: center;
 }
 
 .cabeza {
@@ -21,14 +29,17 @@ color:gray;
 }
 
 .social{
-   display: inline-block;
+   display: flex;
+   justify-content:flex-end;
 }
 
 .piwa{
-   display: fixed;
-   justify-content: space-between;
-   border-top: 2px solid gray;
-   margin-top: 50px;
+   background: #333;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: auto;
    }
 
 .titulo {
