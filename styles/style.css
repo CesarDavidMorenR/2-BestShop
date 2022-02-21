@@ -77,7 +77,7 @@ color:gray;
    text-align: center;
 }
    .twhyus {
-   display: flexgit a;
+   display: flex;
    justify-content: space-between;
    
 
