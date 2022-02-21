@@ -60,6 +60,7 @@ color:gray;
    border-radius: 40px;
    width: 440px;
    height: 67px;
+   border: none;
 
 }
 
@@ -73,6 +74,11 @@ color:gray;
 }
 
 .whyus{
-   display: block;
-   justify-content:centers;
+   text-align: center;
 }
+   .twhyus {
+   display: flexgit a;
+   justify-content: space-between;
+   
+
+} 
