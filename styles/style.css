@@ -37,7 +37,7 @@ color:gray;
    justify-content:flex-end;
 }
 
-.piwa{
+.elpie{
    background: #333;
   color:white;
   display: flex;
@@ -50,4 +50,22 @@ color:gray;
    color:rgb(40, 156, 251);
    padding: 0 50px;
 
+}
+
+.buttonPrinci{
+   color:white;
+   background-color: #08A6E4;
+   border-radius: 40px;
+   width: 440px;
+   height: 67px;
+
+}
+
+.tituPrinci {
+   font-size: 49px;
+   
+}
+
+.titu2Princi{
+   font-size: 16px;
 }
