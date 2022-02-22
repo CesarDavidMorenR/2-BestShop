@@ -8,16 +8,16 @@
 
 header {
    border-bottom: 2px solid gray;
-   display: flex;
+   display: inline-flex;
    justify-content: space-between;
-   position: fixed;
+   
+   
 
 }
 
 body{
    min-height: 100vh;
-   display: flex;
-   flex-direction: column
+  
 }
 
 /* Class */
@@ -33,6 +33,7 @@ body{
 display: inline-block;
 padding: 0 50px;
 color:gray;
+
 }
 
 .social{
@@ -95,23 +96,26 @@ color:gray;
 
 .benefits{
    display:grid;
-   grid-template: 20% 20% 20% 20% 20% /20% 20% 20% 20% 20%;
+   grid-template: repeat(3,3fr) / repeat(5,20%);
    background-color: rgb(251, 253, 228);
-   grid-gap: 15px 20px;
-   width:800px; 
-   align-items: center;
+   grid-gap: 10px 20px;
+   grid-template-areas: 
+    'b b b b b'
+    'y y y y y'
+    'i i i t t'; 
+   
 
 }
 
 .baf {
-   grid-column: 2 / -1;
+   grid-area: b;
    background-color: aquamarine;
    height: 10vh;
 
 }
 
 .ysi {
- grid-column: 2 /spans 3;
+ grid-area: y;
  background-color: blue;
  width: 1124px;
  height: 370px;
@@ -119,7 +123,7 @@ color:gray;
 }
 
 .irc {
- grid-column: 1 /2 ;
+ grid-area: i;
  background-color: blueviolet;
  width: 623px;
  height: 370px;
@@ -127,7 +131,7 @@ color:gray;
 
 .trumpet {
    background-color:#55DFB4;
-   grid-column: 2 / span 2;
+   grid-area: t;
    background-image: url("../images/Trumpet.png");
    background-repeat: no-repeat;
    background-position: center;
