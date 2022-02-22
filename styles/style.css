@@ -40,12 +40,13 @@ color:gray;
 }
 
 .elpie{
-   background: #333;
-  color:white;
+  background: rgb(255, 255, 255);
+  color:rgb(0, 34, 144);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: auto;
+  border-top: 2px solid rgb(117, 113, 113);
    }
 
 .titulo {
