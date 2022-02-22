@@ -6,11 +6,11 @@
    box-sizing: border-box;
 }
 
-
 header {
    border-bottom: 2px solid gray;
    display: flex;
    justify-content: space-between;
+   position: fixed;
 
 }
 
@@ -97,12 +97,14 @@ color:gray;
    display:grid;
    grid-template: 20% 20% 20% 20% 20% /20% 20% 20% 20% 20%;
    background-color: rgb(251, 253, 228);
-   gap: 10px;
-   
+   grid-gap: 15px 20px;
+   width:800px; 
+   align-items: center;
+
 }
 
 .baf {
-   grid-column: 2 / span 2;
+   grid-column: 2 / -1;
    background-color: aquamarine;
    height: 10vh;
 
@@ -113,7 +115,7 @@ color:gray;
  background-color: blue;
  width: 1124px;
  height: 370px;
- align-self: center;
+ 
 }
 
 .irc {
