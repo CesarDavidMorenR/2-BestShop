@@ -98,6 +98,7 @@ color:gray;
    grid-template: 20% 20% 20% 20% 20% /20% 20% 20% 20% 20%;
    background-color: rgb(251, 253, 228);
    gap: 10px;
+   
 }
 
 .baf {
@@ -112,6 +113,7 @@ color:gray;
  background-color: blue;
  width: 1124px;
  height: 370px;
+ align-self: center;
 }
 
 .irc {
