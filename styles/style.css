@@ -25,6 +25,7 @@ body{
 .princi{
    text-align: center;
    background-image: url('../images/Background.png');
+   background-repeat: no-repeat;
    height: 500px;
 }
 
@@ -94,19 +95,23 @@ color:gray;
 
 .benefits{
    display:grid;
-   grid-template: 2fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+   grid-template: 20% 20% 20% 20% 20% /20% 20% 20% 20% 20%;
    background-color: rgb(251, 253, 228);
-   gap: 5px;
+   gap: 10px;
 }
 
 .baf {
-   grid-column: 2 / span 4;
+   grid-column: 2 / span 2;
    background-color: aquamarine;
+   height: 10vh;
+
 }
 
 .ysi {
- grid-column: 1 / 3;
+ grid-column: 2 /spans 3;
  background-color: blue;
+ width: 1124px;
+ height: 370px;
 }
 
 .irc {
