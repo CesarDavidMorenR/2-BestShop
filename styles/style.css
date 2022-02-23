@@ -99,37 +99,46 @@ color:gray;
 
 .benefits{
    display:grid;
-   grid-template: repeat(3,3fr) / repeat(5,20%);
-   background-color: rgb(251, 253, 228);
+   grid-template: repeat(4,4fr) / repeat(5,20%);
+   background-color  #F7F7F7;
    grid-gap: 10px 20px;
    grid-template-areas: 
+    ' b b b b b'
     'b b b b b'
     'y y y y y'
-    'i i i t t'; 
-   
+    'i i i t t'
+    '. . . t t' 
+    '. . . t t'
+    '. . . t t'
+    '. . . t t'
+    '. . . t t'
+    '. . . t t'
+    '. . . t t'
+    '. . . t t'
+    '. . . t t';
 
 }
 
 .baf {
    grid-area: b;
-   background-color: aquamarine;
-   height: 10vh;
-
+   background-color: rgb(218, 117, 117);
+   border: 1px solid #E8E9ED;
+   border-radius: 5px;
 }
 
 .ysi {
  grid-area: y;
- background-color: blue;
- width: 1124px;
- height: 370px;
+ background-color: rgb(51, 13, 13);
+ border: 1px solid #E8E9ED;
+ border-radius: 5px;
  
 }
 
 .irc {
  grid-area: i;
- background-color: blueviolet;
- width: 623px;
- height: 370px;
+ background-color: rgb(46, 163, 192);
+ border: 1px solid #E8E9ED;
+ border-radius: 5px;
 }
 
 .trumpet {
@@ -138,8 +147,6 @@ color:gray;
    background-image: url("../images/Trumpet.png");
    background-repeat: no-repeat;
    background-position: center;
-   width: 440px;
-   height: 370px;
    border-radius: 5px;
    border: 1px solid #E8E9ED;
 }
