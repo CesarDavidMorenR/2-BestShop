@@ -33,7 +33,9 @@ li{
    height: 100vh;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: content;
+   margin: 100px 0px 0px 0px;
+   
 
 }
 
@@ -76,6 +78,7 @@ color:gray;
 
 }
 
+
 .tituPrinci {
    font-size: 49px;
    
@@ -108,7 +111,7 @@ color:gray;
    /* grid-template: repeat(10,4fr) / repeat(5,20%); */
    grid-template-columns: repeat(5,20%);
    background-color:  #F7F7F7;
-   grid-gap: 10px 20px;
+   grid-gap: 20px 10px;
    grid-template-areas: 
     '. b b b .'
     '. b b b .'
