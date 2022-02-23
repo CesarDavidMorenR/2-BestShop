@@ -27,7 +27,7 @@ body{
    background-image: url('../images/Background.png');
    background-repeat: no-repeat;
    min-height: 100vh;
-   width: 100%;
+   width: 100vw;
 
 }
 
@@ -165,7 +165,7 @@ color:gray;
 
 .pricing {
    
-   
+   color: #08A6E4;
 }
 
 .Basic {
