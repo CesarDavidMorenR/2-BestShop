@@ -158,12 +158,19 @@ color:gray;
 
 /* Sección precios */
 
+.precios {
+   display: inline-flex;
+   align-items: center;
+}
+
 .pricing {
-   text-align: center;
+   
+   
 }
 
 .Basic {
    border: 2px solid green;
+   
 }
 
 .proffesional {
