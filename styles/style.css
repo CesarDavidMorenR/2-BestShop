@@ -20,6 +20,10 @@ body{
   
 }
 
+li{
+   list-style:  '\2713';
+}
+
 /* Class */
 
 .princi{
@@ -159,8 +163,10 @@ color:gray;
 /* Sección precios */
 
 .precios {
-   display: inline-flex;
+   display: flex;
    align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
 }
 
 .pricing {
@@ -170,7 +176,7 @@ color:gray;
 
 .Basic {
    border: 2px solid green;
-   
+      
 }
 
 .proffesional {
