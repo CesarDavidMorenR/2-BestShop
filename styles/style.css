@@ -120,7 +120,9 @@ color:gray;
    background-image: url("/images/Macbook2.png");
    background-repeat: no-repeat;
    background-position: right;
-   grid-row: 1/ span 4;
+   height: 300px;
+
+
 }
 
 .ysi {
@@ -128,6 +130,10 @@ color:gray;
  background-color: rgb(51, 13, 13);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
+ height: 200px;
+ background-image: url("/images/iPhone2.png");
+ background-repeat:no-repeat;
+ background-position: left;
  
 }
 
@@ -146,4 +152,6 @@ color:gray;
    background-position: center;
    border-radius: 5px;
    border: 1px solid #E8E9ED;
+   height: 200px;
+
 }
