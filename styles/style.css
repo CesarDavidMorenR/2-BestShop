@@ -120,7 +120,7 @@ color:gray;
    background-image: url("/images/Macbook2.png");
    background-repeat: no-repeat;
    background-position: right;
-   height: 20vh;
+   grid-row: 1/ span 4;
 }
 
 .ysi {
