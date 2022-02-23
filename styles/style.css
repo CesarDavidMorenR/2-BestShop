@@ -100,7 +100,7 @@ color:gray;
 .benefits{
    display:grid;
    grid-template: repeat(4,4fr) / repeat(5,20%);
-   background-color  #F7F7F7;
+   background-color;  #F7F7F7;
    grid-gap: 10px 20px;
    grid-template-areas: 
     ' b b b b b'
