@@ -176,8 +176,9 @@ color:gray;
 }
 
 .tabla{
-   justify-content: space-evenly;
+   margin: auto;
    display:flex;
+   justify-content: center;
 }
 
 .precios li{
