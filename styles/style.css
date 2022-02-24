@@ -176,7 +176,7 @@ color:gray;
 }
 
 .tabla{
-   justify-content: space-around;
+   justify-content: space-evenly;
    display:flex;
 }
 
