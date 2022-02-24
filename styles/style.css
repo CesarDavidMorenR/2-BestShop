@@ -4,6 +4,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   
 }
 
 header {
@@ -11,15 +12,12 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: auto;
    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-
 }
 
 body{
-   min-height: 100vh;
-   min-width: 100vw;
-  
+   /* min-height: 100vh; */
+   /* min-width: 100vw; */
 }
 
 
@@ -27,15 +25,13 @@ body{
 
 .princi{
    text-align: center;
-   background-image: url('../images/Background.png');
+   background-image: url("../images/Background.png");
    width: 100vw;
    height: 100vh;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: content;
+   background-size: cover;
    margin: 100px 0px 0px 0px;
-   
-
 }
 
 .cabeza {
@@ -242,3 +238,33 @@ text-align: center;
 }
 
 /* Seccion de contacto */
+
+/* infor {
+   display: block;
+   margin-left: 150px;
+   
+} */
+
+.conntac {
+display: flex;
+width: 400px;
+margin: auto;
+padding: 10px;
+
+
+}
+
+#nombre, #email {
+   border: none;
+   border-bottom: 1px solid #95989A;
+}
+
+.infor {
+   margin-right: 50px;
+}
+
+.nombre, .email {
+width: 20px;
+}
+
+
