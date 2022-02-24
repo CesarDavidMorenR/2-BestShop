@@ -12,6 +12,8 @@ header {
    justify-content: space-between;
    align-items: center;
    width: auto;
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+
 }
 
 body{
@@ -93,7 +95,6 @@ color:gray;
    display: flex;
    justify-content: space-between;
 } 
-
 .buttonPie {
    border:none;
    color:white;
