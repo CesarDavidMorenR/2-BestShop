@@ -173,10 +173,12 @@ color:gray;
    align-content: center;
 }
 
-.precios li{
-   list-style: '☑' ;
-   padding: 10px;
+.precios ul{
+   list-style: '☑';
+   padding: 0 50%;
 }
+
+
 
 .precios h2 {
  color: #08A6E4;
