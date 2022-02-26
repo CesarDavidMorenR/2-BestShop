@@ -244,14 +244,12 @@ color: #A5A5A5;
 
 .a_basic{
    position: absolute;
-   margin: 115px 120px;
+   margin: 100px 100px;
    background: #EB476E;
    border-radius: 23px;
    border:none;
    width: 150px;
    height: 50px;
-  
-
 }
 
 .a_profesional{
@@ -261,6 +259,7 @@ color: #A5A5A5;
    border: none;
    width: 165px;
    height: 50px;
+   margin: 120px 120px;
 }
 
 .a_premium{
@@ -289,7 +288,8 @@ line-height: 42px;
    border: 1px solid #FB3B64;
    border-radius: 18px;
    width: 372px;
-   height: 461px;      
+   height: 461px;   
+      
 }
 
 .hb {
@@ -321,7 +321,7 @@ line-height: 24px;
     border-radius: 18px;
     width: 405px;
     height: 500px;
-    margin-bottom: 100px;
+    
     
 }
 
