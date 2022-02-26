@@ -209,18 +209,17 @@ color: #A5A5A5;
 
 /* Sección precios */
 
+.precios{
+   margin-top: 60px;
+}
+
 .precios article {
-   
-   background-color: #fff;
+    
    margin: 10px 10px;
-   padding: 10px 10px;
-   width: 300px;
-   height: 500px;
-   
+   padding: 10px 5px;
 }
 
 .tabla{
-   
    display:flex;
    justify-content: center;
    flex-wrap: wrap;
@@ -229,39 +228,101 @@ color: #A5A5A5;
 
 .precios ul{
    list-style: '☑';
-   padding: 0 50%;
+   padding: 0 35%;
+
 }
 
+.precios li{
+   width: 100px;
+   margin: 10px;
+   font-family: 'Open Sans',sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+}
 
+.a_basic{
+   position: absolute;
+   margin: 115px 120px;
+   background: #EB476E;
+   border-radius: 23px;
+   border:none;
+   width: 150px;
+   height: 50px;
+  
+
+}
+
+.a_profesional{
+   background: #07ACE6;
+   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+   border-radius: 23px;
+   border: none;
+   width: 165px;
+   height: 50px;
+}
+
+.a_premium{
+   position: absolute;
+   margin: 115px 120px;
+   background: #55DFB4;
+   border-radius: 23px;
+   border:none;
+   width: 150px;
+   height: 50px;
+}
 
 .precios h2 {
- color: #08A6E4;
-text-align: center;
-
+ color: #000000;
+ text-align: center;
+ margin-bottom: 30px;
+ font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
 }
 
 .Basic {
    background: #FFFFFF 0% 0% no-repeat padding-box;
    border: 1px solid #FB3B64;
    border-radius: 18px;
-   
-      
+   width: 372px;
+   height: 461px;      
 }
 
 .hb {
-    font-size: 40px;
     display: block;
     text-align: center;
     padding: 40px 0;
-    
+}
+
+.hb h3{
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+
+.hb p{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 46px;
+   line-height: 64px;
+   color: #FB3B64;
 }
 
 .proffesional {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 5px 10px 27px #07ACE629;
     border: 1px solid #07ACE6;
     border-radius: 18px;
-      
+    width: 405px;
+    height: 500px;
+    margin-bottom: 100px;
+    
 }
 
 .ph {
@@ -269,14 +330,38 @@ text-align: center;
    display: block;
    text-align: center;
    padding: 40px 0;
-   
-   
-}
+  }
+
+  .ph h3{
+   font-family: 'Raleway',sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 21px;
+   line-height: 25px;
+  }
+
+  .ph_precio{
+   font-family: 'Open Sans',sans-serif;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 46px;
+   line-height: 70px;
+   color: #07ACE6;
+  }
+
+  .ph_limit, .prh_limit{
+   font-family: 'Raleway',sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 14px;
+  }
 
 .premium {
- background: #FFFFFF 0% 0% no-repeat padding-box;
  border: 1px solid #55DFB4;
  border-radius: 18px;
+ width: 372px;
+ height: 461px;
 }
 
 .prh {
@@ -287,11 +372,37 @@ text-align: center;
    
 }
 
+.prh h3{
+   font-family: 'Raleway',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+
+.prh_precio{
+   font-family: 'Open Sans',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 46px;
+line-height: 64px;
+color: #55DFB4;
+}
+
 /* Seccion de contacto */
 
 form{
    margin-left: 50px;
    width: 500px;
+}
+
+address{
+   display: flex;
+}
+
+address a{
+   position: relative;
+   padding: 10px;
 }
 
 .conntac {
@@ -351,23 +462,9 @@ line-height: 22px;
   line-height: 16px;
   color: #707070;
   margin-top: 30px;
+  text-indent: -15px;
   
   }
-
-  label {
-   display: block;
-   padding-left: 15px;
-   text-indent: -15px;
- }
- .check {
-   width: 15px;
-   height: 15px;
-   padding: 0;
-   margin: 0;
-   vertical-align: bottom;
-   position: relative;
-   top: -1px;
- }
 
   .buttonform{
    border:none;
@@ -380,7 +477,17 @@ line-height: 22px;
    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
    border-radius: 35px;
    width: 50%;
-   height: 40px;    
+   height: 50px;    
+}
+
+.emailicono, .telico{
+   display: flex;
+   justify-content: center;
+   
+}
+
+.telico{
+   margin-left: 20px;
 }
 
 
