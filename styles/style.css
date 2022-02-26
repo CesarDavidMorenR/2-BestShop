@@ -26,20 +26,26 @@ body{
 
 .princi{
    text-align: center;
-   background-image: url("../images/Background.png");
-   width: 100%;
-   height: 100vh;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-  
 }
 
 .cabeza {
 display: inline-block;
 padding: 0 50px;
-color:gray;
+color:#A5A5A5;
+font-family: 'Open Sans', 'sans-serif';
+font-weight: 700;
+font-size: 11px;
+line-height: 15px;
+letter-spacing: 3.28px;
+}
 
+a{
+   text-decoration: none;
+}
+
+a:hover{
+   border-bottom: 3px solid #08A6E4;
+   padding-bottom: 7px;
 }
 
 .social{
@@ -59,8 +65,12 @@ color:gray;
    }
 
 .titulo {
-   color:rgb(40, 156, 251);
+   color: #08A6E4;
    padding: 0 50px;
+   font-family: 'Raleway', 'sans-serif';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 32px;
 
 }
 
