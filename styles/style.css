@@ -7,7 +7,7 @@
    
 }
 
-header {
+header{
    border-bottom: 2px solid gray;
    display: flex;
    justify-content: space-between;
@@ -84,13 +84,19 @@ color:gray;
    font-size: 16px;
 }
 
+/* Sección Why us */
+
 .whyus{
    text-align: center;
    }
 
+.whyus h2{
+   margin-bottom: 50px;
+}
+
 .twhyus {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
 } 
 
 /* Grid Benfits */
