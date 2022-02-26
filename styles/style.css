@@ -99,6 +99,22 @@ color:gray;
    justify-content: space-evenly;
 } 
 
+.person{
+   position: absolute;
+   margin-left: 35px;
+}
+
+.ojopalo{
+   position: absolute;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+
+.catalogpalo{
+   position: absolute;
+   margin-left: 35px;
+}
+
 /* Grid Benfits */
 
 .benefits{
