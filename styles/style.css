@@ -20,6 +20,7 @@ body{
    min-height: 100vh; 
    /* min-width: 100vw; */
    min-width: 100%;
+   
 }
 
 
@@ -48,22 +49,6 @@ a:hover{
    border-bottom: 3px solid #08A6E4;
    padding-bottom: 17px;
 }
-
-.social{
-   display: flex;
-   justify-content:flex-end;
-   list-style: none;
-}
-
-.elpie{
-  background: rgb(255, 255, 255);
-  color:rgb(0, 34, 144);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: auto;
-  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
-   }
 
 .titulo {
    color: #08A6E4;
@@ -116,6 +101,7 @@ margin-top: 20px;
 
 .whyus{
    text-align: center;
+   margin-bottom: 150px;
    }
 
 .whyus h2{
@@ -126,6 +112,24 @@ margin-top: 20px;
    display: flex;
    justify-content: space-evenly;
 } 
+
+.num{
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 5.96px;
+}
+
+.letter{
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #A5A5A5;
+}
 
 .person{
    position: absolute;
@@ -329,3 +333,26 @@ width: 20px;
       
 }
 
+.elpie{
+   background:  #F7F7F7;
+   color:rgb(0, 34, 144);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: auto;
+   box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+   padding: 15px;
+   padding-right: 100px;
+   padding-left: 100px;
+
+    }
+
+    .social{
+      display: flex;
+      justify-content:flex-end;
+      list-style: none;
+   }
+
+   .social li{
+      padding:0 5px;
+   }
