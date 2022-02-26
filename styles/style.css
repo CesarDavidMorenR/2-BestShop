@@ -289,36 +289,21 @@ text-align: center;
 
 /* Seccion de contacto */
 
-/* infor {
-   display: block;
-   margin-left: 150px;
-   
-} */
-
-.formu{
-   width: 100%;
+form{
+   margin-left: 50px;
+   width: 500px;
 }
 
 .conntac {
-display: flex;
-width: 400px;
-margin: auto;
-padding: 10px;
-
-
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+   margin-top: 100px;
 }
 
 #nombre, #email {
    border: none;
    border-bottom: 1px solid #95989A;
-}
-
-.infor {
-   margin-right: 50px;
-}
-
-.nombre, .email {
-width: 20px;
 }
 
 .infor h4{
@@ -346,19 +331,43 @@ line-height: 22px;
    color: #A5A5A5;
 }
 
+.textform{
+   font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  color: #08A6E4;
+  
+  }
+  
+  .textcheck{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+  }
 
 
-/* Footer */
-
-.buttonPie {
+  .buttonform{
    border:none;
    color:white;
    background-color: #08A6E4;
    display: block;
    margin-left: auto;
    margin-top: 5px;
+   background: #08A6E4;
+   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+   border-radius: 35px;
+   width: 50%;
+   height: 40px;
       
 }
+
+/* Footer */
 
 .elpie{
    background:  #F7F7F7;
@@ -401,3 +410,8 @@ font-size: 11px;
 line-height: 15px;
 color: #A5A5A5;
 }
+
+
+
+
+
