@@ -247,6 +247,10 @@ color: #A5A5A5;
    padding-bottom: 50px;
 }
 
+.baf svg{
+   float: right;
+}
+
 .irc{
  grid-area: i;
  background-color: rgb(254, 255, 255);
@@ -291,7 +295,8 @@ color: #A5A5A5;
 }
 
 .trumpet img{
-   margin: 20%;
+   margin-top: 100px;
+   margin-left: 105px;
 }
 
 /* Sección precios */
