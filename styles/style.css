@@ -153,15 +153,15 @@ color: #A5A5A5;
    display:grid;
    /* grid-template: repeat(10,4fr) / repeat(5,20%); */
    grid-template-columns: repeat(10,10%);
-   grid-auto-rows: min-content 100px;
+   grid-auto-rows:minmax(100px, auto);
+   row-gap: 40px;
+
    background-color:  #F7F7F7;
-   /* gap: 40px 60px; */
    grid-template-areas:
-     ". . . . . . . . . ."
      ". . . . . . . . . ."
      ". b b b b b b b b ."
      ". y y y y y y y y ."
-     ". i i i i i t t t ."
+     ". i i i i . t t t ."
      ". . . . . . . . . .";
      }
 
@@ -177,24 +177,23 @@ color: #A5A5A5;
    }
 
 .ysi {
- grid-area: y ;
+ grid-area: y;
  background-color: rgb(51, 13, 13);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
- ;
  background-image: url("/images/iPhone2.png");
  background-repeat:no-repeat;
  background-position: left;
- 
+ height: 370px;
 }
 
-.irc {
+.irc{
  grid-area: i;
  background-color: rgb(46, 163, 192);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
- 
- 
+ height: 370px;
+ width: 115%;
 }
 
 .trumpet {
@@ -204,6 +203,7 @@ color: #A5A5A5;
    background-position: center;
    border-radius: 5px;
    border: 1px solid #E8E9ED;
+   height: 370px;;
 }
 
 /* Sección precios */
@@ -214,7 +214,7 @@ color: #A5A5A5;
 
 .precios article {
     
-   margin: 10px 10px;
+   margin: 10px 30px;
    padding: 10px 5px;
 }
 
