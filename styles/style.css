@@ -114,7 +114,7 @@ margin-top: 20px;
 } 
 
 .num{
-font-family: Raleway;
+font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 20px;
@@ -123,7 +123,7 @@ letter-spacing: 5.96px;
 }
 
 .letter{
-font-family: Raleway;
+font-family: 'Raleway',sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -152,16 +152,18 @@ color: #A5A5A5;
 .benefits{
    display:grid;
    /* grid-template: repeat(10,4fr) / repeat(5,20%); */
-   grid-template-columns: repeat(5,20%);
+   grid-template-columns: repeat(10,10%);
+   grid-auto-rows: min-content 100px;
    background-color:  #F7F7F7;
-   grid-gap: 20px 10px;
+   /* gap: 40px 60px; */
    grid-template-areas:
-      '. b b b .'
-      '. b b b .'
-      '. y y y .'
-      '. i i t .'
-      '. i i t .';
-}
+     ". . . . . . . . . ."
+     ". . . . . . . . . ."
+     ". b b b b b b b b ."
+     ". y y y y y y y y ."
+     ". i i i i i t t t ."
+     ". . . . . . . . . .";
+     }
 
 .baf {
    grid-area: b;
@@ -171,17 +173,15 @@ color: #A5A5A5;
    background-image: url("/images/Macbook2.png");
    background-repeat: no-repeat;
    background-position: right;
-   height: 300px;
-
-
-}
+  height: 370px;
+   }
 
 .ysi {
- grid-area: y;
+ grid-area: y ;
  background-color: rgb(51, 13, 13);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
- height: 200px;
+ ;
  background-image: url("/images/iPhone2.png");
  background-repeat:no-repeat;
  background-position: left;
@@ -193,18 +193,17 @@ color: #A5A5A5;
  background-color: rgb(46, 163, 192);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
+ 
+ 
 }
 
 .trumpet {
    background-color:#55DFB4;
    grid-area: t;
-   background-image: url("../images/Trumpet.png");
    background-repeat: no-repeat;
    background-position: center;
    border-radius: 5px;
    border: 1px solid #E8E9ED;
-   height: 200px;
-
 }
 
 /* Sección precios */
@@ -264,7 +263,7 @@ color: #A5A5A5;
 
 .a_premium{
    position: absolute;
-   margin: 115px 120px;
+   margin: 80px 110px;
    background: #55DFB4;
    border-radius: 23px;
    border:none;
