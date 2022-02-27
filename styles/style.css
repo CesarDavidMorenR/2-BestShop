@@ -24,7 +24,7 @@ body{
 }
 
 
-/* CSS de las clases de las etiquetas */
+/* Parte inicial */
 
 .princi{
    text-align: center;
@@ -209,7 +209,6 @@ color: #A5A5A5;
 }
 
 .baf img{
-   
    position: absolute;
    margin-left: 850px;
    margin-top: 90px;
@@ -263,6 +262,12 @@ color: #A5A5A5;
    position: absolute;
    margin-left: 80px;
    margin-top: 20px;
+}
+
+.ysi img{
+   position: absolute;
+   margin-top: 50px;
+   margin-left: 70px;
 }
 
 .irc{
