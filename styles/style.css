@@ -167,33 +167,43 @@ color: #A5A5A5;
 
 .baf {
    grid-area: b;
-   background-color: rgb(218, 117, 117);
+   background-color: white ;
    border: 1px solid #E8E9ED;
    border-radius: 5px;
-   background-image: url("/images/Macbook2.png");
-   background-repeat: no-repeat;
-   background-position: right;
-  height: 370px;
+   height: 370px;
    }
+
+.baf h3{
+   width: 400px;
+   margin-left: 50px;
+   margin-top: 100px;
+}
+
+.baf p{
+   width: 450px;
+   margin-top: 20px;
+   margin-left: 50px;
+   padding-bottom: 50px;
+   border-bottom: 4px solid #FB3B64;
+}
 
 .ysi {
  grid-area: y;
- background-color: rgb(51, 13, 13);
+ background-color: rgb(255, 255, 255);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
- background-image: url("/images/iPhone2.png");
- background-repeat:no-repeat;
- background-position: left;
  height: 370px;
 }
 
 .irc{
  grid-area: i;
- background-color: rgb(46, 163, 192);
+ background-color: rgb(254, 255, 255);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
  height: 370px;
  width: 115%;
+
+ 
 }
 
 .trumpet {
