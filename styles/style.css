@@ -202,6 +202,19 @@ color: #A5A5A5;
    line-height: 22px;
 }
 
+.baf svg{
+   float: right;
+   margin-right: 100px;
+   margin-top: 40px;
+}
+
+.baf img{
+   
+   position: absolute;
+   margin-left: 850px;
+   margin-top: 90px;
+}
+
 .ysi {
  grid-area: y;
  background-color: rgb(255, 255, 255);
@@ -226,7 +239,6 @@ color: #A5A5A5;
    /* padding-right: 50px; */
    width: 300px;
    
-   
 }
 
 .ysi p{
@@ -240,15 +252,17 @@ color: #A5A5A5;
    /* text-indent: 500x; */
    /* padding-left: 1000px; */
    margin-top: 20px;
-   margin-right: 50px; 
-   /* margin-left: 800px; */
+   margin-right: 50px;
+    /* margin-left: 800px; */
    border-bottom: 4px solid #08A6E4;
    margin-left: 700px;
    padding-bottom: 50px;
 }
 
-.baf svg{
-   float: right;
+.ysi svg{
+   position: absolute;
+   margin-left: 80px;
+   margin-top: 20px;
 }
 
 .irc{
