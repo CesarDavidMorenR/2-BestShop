@@ -3,8 +3,14 @@
 *{
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
-   
+   box-sizing: border-box; 
+}
+
+body{
+   min-height: 100vh; 
+   /* min-width: 100vw; */
+   min-width: 100%;
+  
 }
 
 header{
@@ -14,13 +20,6 @@ header{
    align-items: center;
    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
    padding: 10px;
-}
-
-body{
-   min-height: 100vh; 
-   /* min-width: 100vw; */
-   min-width: 100%;
-   
 }
 
 
@@ -342,6 +341,7 @@ color: #A5A5A5;
    justify-content: center;
    flex-wrap: wrap;
    align-content: center;
+   background-image: url(/images/Background.png);
 }
 
 .precios ul{
@@ -439,7 +439,7 @@ line-height: 24px;
     border-radius: 18px;
     width: 405px;
     height: 500px;
-    
+    align-self: center;
 }
 
 .ph {
