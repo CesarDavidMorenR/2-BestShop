@@ -25,7 +25,7 @@ header{
 
 /* Meida Queries */
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:1000px) {
    
 }
 
@@ -341,7 +341,7 @@ color: #A5A5A5;
    justify-content: center;
    flex-wrap: wrap;
    align-content: center;
-   background-image: url(/images/Background.png);
+   background-image: url(../images/Background.png);
 }
 
 .precios ul{
