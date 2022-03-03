@@ -10,7 +10,7 @@ body{
    min-height: 100vh; 
    /* min-width: 100vw; */
    min-width: 100%;
-   font-size: 16px;
+   /* font-size: 16px; */
 }
 
 header{
@@ -30,6 +30,19 @@ header:hover {
 /* Meida Queries */
 
 @media only screen and (max-width:1000px) {
+body{
+   background-color: #EB476E;
+}
+
+.benefits {
+grid-template-areas:
+
+". . . . . . . . . ."
+". . . b b b b . . ."
+". . . y y y y . . ."
+". . . i i . t . . ."
+". . . . . . . . . .";
+        }
    
 }
 
