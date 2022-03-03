@@ -74,7 +74,6 @@ a:hover{
    color:white;
    background-color: #08A6E4;
    border-radius: 2.5em;
-   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
    width: 27.5em;
    height: 4.1875em;
    border:none;
@@ -82,43 +81,43 @@ a:hover{
   font-style: normal;
   font-weight: bold;
   line-height: 1.375em;
-  margin-top: 1.5625em;
-
+  margin-top: 50px;
 }
 
+.buttonPrinci:hover {
+   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+}
 
 .tituPrinci {
 font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 3.0625em;
-line-height: 3.5625em;
-margin-top: 150px;
+line-height: 100px;
+margin-top: 100px;
    
 }
 
 .titu2Princi{
-font-family: Open Sans;
+font-family: 'Open Sans',sans-serif;
 font-style: normal;
 font-weight: normal;
-line-height: 1.375em;
-margin-top: 1.25em;
 }
 
 /* Sección Why us */
 
 .whyus{
    text-align: center;
-   margin-bottom: 9.375em;
+   margin-bottom: 150px;
    }
 
 .whyus h2{
-   margin-bottom: 6.25em;
+   margin-bottom: 100px;
    font-family: 'Raleway', sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 2.25em;
-   line-height: 2.625em;
+   line-height: 42px;
 }
 
 .twhyus {
