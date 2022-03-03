@@ -130,7 +130,7 @@ font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 1.25em;
-line-height: 1.5em;
+line-height: 24px;
 letter-spacing: 0.3725em;
 }
 
@@ -150,7 +150,7 @@ color: #A5A5A5;
 .ojopalo{
    position: absolute;
    margin-left: 1.25em;
-   margin-top: 0.625em;
+   margin-top: 10px;
 }
 
 .catalogpalo{
@@ -181,42 +181,42 @@ color: #A5A5A5;
    background-color: white ;
    border: 1px solid #E8E9ED;
    border-radius: 5px;
-   height: 23.125em;
+   height: 370px;
    }
 
 .baf h3{
    width: 25em;
    margin-left: 3.125em;
-   margin-top: 6.25em;
+   margin-top: 100px;
    font-family: 'Raleway',sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 2.25em;
-   line-height: 2.625em;
+   line-height:42px;
 }
 
 .baf p{
    width: 26.5625em;
-   margin-top: 1.25em;
+   margin-top: 20px;
    margin-left: 3.125em;
-   padding-bottom: 3.125em;
+   padding-bottom: 50px;
    border-bottom: 4px solid #FB3B64;
    font-family: 'Open Sans',sans-serif;
    font-style: normal;
    font-weight: normal;
-   line-height: 1.375em;
+   line-height:22px;
 }
 
 .baf svg{
    float: right;
    margin-right: 6.25em;
-   margin-top: 2.5em;
+   margin-top: 40px;
 }
 
 .baf img{
    position: absolute;
    margin-left: 53.125em;
-   margin-top: 5.625em;
+   margin-top: 90px;
 }
 
 .ysi {
@@ -224,7 +224,7 @@ color: #A5A5A5;
  background-color: rgb(255, 255, 255);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
- height: 23.125em;
+ height: 370px;
  /* justify-content: flex-end; */
  /* align-items: center; */
  /* text-indent: 729px; */
@@ -235,9 +235,9 @@ color: #A5A5A5;
    font-style: normal;
    font-weight: normal;
    font-size: 2.25em;
-   line-height: 2.625em;
+   line-height: 42px;
    float: right;
-   margin-top: 3.125em;
+   margin-top: 50px;
    margin-right: 15.625em;
    /* margin-left: 840px; */
    /* padding-right: 50px; */
@@ -249,28 +249,28 @@ color: #A5A5A5;
    font-family: 'Open Sans',sans-serif;
    font-style: normal;
    font-weight: normal;
-   line-height: 1.375em;
+   line-height: 22px;
    float: right;
    width: 31.25em;
    /* text-indent: 500x; */
    /* padding-left: 1000px; */
-   margin-top: 1.25em;
+   margin-top: 20px;
    margin-right: 3.125em;
     /* margin-left: 800px; */
    border-bottom: 4px solid #08A6E4;
    margin-left: 43.75em;
-   padding-bottom: 3.125em;
+   padding-bottom: 50px;
 }
 
 .ysi svg{
    position: absolute;
    margin-left: 5em;
-   margin-top: 1.25em;
+   margin-top: 20px;
 }
 
 .ysi img{
    position: absolute;
-   margin-top: 3.125em;
+   margin-top: 50px;
    margin-left: 4.375em;
 }
 
@@ -279,7 +279,7 @@ color: #A5A5A5;
  background-color: rgb(254, 255, 255);
  border: 1px solid #E8E9ED;
  border-radius: 5px;
- height: 23.125em;
+ height: 370px;
  width: 115%;
  text-align: justify;
  
@@ -290,9 +290,9 @@ color: #A5A5A5;
    font-style: normal;
    font-weight: normal;
    font-size: 2.25em;
-   line-height: 2.625em;
+   line-height:42px;
    margin-left: 3.125em;
-   margin-top: 6.25em;
+   margin-top: 100px;
    width: 55%;
 }
 
@@ -300,11 +300,11 @@ color: #A5A5A5;
    font-family: 'Open Sans',sans-serif;
    font-style: normal;
    font-weight: normal;
-   line-height: 1.375em;
+   line-height: 22px;
    width: 65%;
-   margin-top: 1.25em;
+   margin-top:20px;
    margin-left: 3.125em;
-   padding-bottom: 3.125em;
+   padding-bottom: 50px;
    border-bottom: 4px solid #55DFB4;
 }
 
@@ -313,11 +313,11 @@ color: #A5A5A5;
    grid-area: t;
    border-radius: 5px;
    border: 1px solid #E8E9ED;
-   height: 23.125em;
+   height: 370px;
 }
 
 .trumpet img{
-   margin-top: 6.25em;
+   margin-top:100px;
    margin-left: 6.5625em;
 }
 
