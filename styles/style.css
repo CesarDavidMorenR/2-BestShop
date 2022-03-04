@@ -337,13 +337,13 @@ color: #A5A5A5;
 /* Sección precios */
 
 .precios{
-   margin-top: 3.75em;
+   margin-top: 60px;
 }
 
 .precios article {
     
-   margin: 0.625em 1.875em;
-   padding: 0.625em 0.3125em;
+   margin: 10px 1.875em;
+   padding: 10px 0.3125em;
 }
 
 .tabla{
@@ -366,17 +366,17 @@ color: #A5A5A5;
    font-style: normal;
    font-weight: normal;
    font-size: 0.875em;
-   line-height: 1.1875em;
+   line-height: 19px;
 }
 
 .a_basic{
    position: absolute;
-   margin: 6.25em 6.25em;
+   margin: 100px 6.25em;
    background: #EB476E;
    border-radius: 23px;
    border:none;
    width: 9.375em;
-   height: 3.125em;
+   height: 50px;
 }
 
 .a_profesional{
@@ -385,29 +385,29 @@ color: #A5A5A5;
    border-radius: 23px;
    border: none;
    width: 10.3125em;
-   height: 3.125em;
-   margin: 7.5em 7.5em;
+   height: 50px;
+   margin: 120px 7.5em;
 }
 
 .a_premium{
    position: absolute;
-   margin: 5em 6.875em;
+   margin:80px 6.875em;
    background: #55DFB4;
    border-radius: 23px;
    border:none;
    width: 9.375em;
-   height: 3.125em;
+   height:50px;
 }
 
 .precios h2 {
  color: #000000;
  text-align: center;
- margin-bottom: 1.875em;
+ margin-bottom: 30px;
  font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 2.25em;
-line-height: 2.625em;
+line-height: 42px;
 }
 
 .Basic {
@@ -415,22 +415,22 @@ line-height: 2.625em;
    border: 1px solid #FB3B64;
    border-radius: 18px;
    width: 23.25em;
-   height: 28.8125em;   
+   height: 461px;   
       
 }
 
 .hb {
     display: block;
     text-align: center;
-    padding: 2.5em 0;
+    padding: 40px 0;
 }
 
 .hb h3{
-font-family: Raleway;
+font-family: 'Raleway',sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 1.25em;
-line-height: 1.5em;
+line-height: 24px;
 }
 
 .hb p{
@@ -438,7 +438,7 @@ line-height: 1.5em;
    font-style: normal;
    font-weight: 300;
    font-size: 2.875em;
-   line-height: 4em;
+   line-height: 64px;
    color: #FB3B64;
 }
 
@@ -447,7 +447,7 @@ line-height: 1.5em;
     border: 1px solid #07ACE6;
     border-radius: 18px;
     width: 25.3125em;
-    height: 31.25em;
+    height: 500px;
     align-self: center;
 }
 
@@ -455,7 +455,7 @@ line-height: 1.5em;
    font-size: 2.5em;
    display: block;
    text-align: center;
-   padding: 2.5em 0;
+   padding: 40px 0;
   }
 
   .ph h3{
@@ -463,7 +463,7 @@ line-height: 1.5em;
    font-style: normal;
    font-weight: bold;
    font-size: 1.3125em;
-   line-height: 1.5625em;
+   line-height: 25px;
   }
 
   .ph_precio{
@@ -471,7 +471,7 @@ line-height: 1.5em;
    font-style: normal;
    font-weight: 300;
    font-size: 2.875em;
-   line-height: 4.375em;
+   line-height: 70px;
    color: #07ACE6;
   }
 
@@ -480,38 +480,38 @@ line-height: 1.5em;
    font-style: normal;
    font-weight: bold;
    font-size: 0.75em;
-   line-height: 0.875em;
+   line-height:14px;
   }
 
 .premium {
  border: 1px solid #55DFB4;
  border-radius: 18px;
  width: 23.25em;
- height: 28.8125em;
+ height: 461px;
 }
 
 .prh {
    font-size: 2.5em;
    display: block;
    text-align: center;
-   padding: 2.5em 0;
+   padding: 40px 0;
    
 }
 
 .prh h3{
-   font-family: 'Raleway',sans-serif;
+font-family: 'Raleway',sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 1.25em;
-line-height: 1.5em;
+line-height: 24px;
 }
 
 .prh_precio{
-   font-family: 'Open Sans',sans-serif;
+font-family: 'Open Sans',sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 2.875em;
-line-height: 4em;
+line-height: 64px;
 color: #55DFB4;
 }
 
@@ -534,8 +534,8 @@ address a{
 .conntac {
    display: flex;
    justify-content: center;
-   margin-bottom: 3.125em;
-   margin-top: 6.25em;
+   margin-bottom: 50px;
+   margin-top: 100px;
 }
 
 #nombre, #email {
@@ -549,21 +549,21 @@ address a{
 font-style: normal;
 font-weight: normal;
 font-size: 3.0625em;
-line-height: 3.625em;
+line-height: 58px;
 }
 
 .infor h5{
-   font-family: 'Open Sans',sans-serif;
+font-family: 'Open Sans',sans-serif;
 font-style: normal;
 font-weight: normal;
-line-height: 1.375em;
+line-height: 22px;
 }
 
 .email, .tel{
-   font-family: Open Sans;
+   font-family: 'Open Sans',sans-serif;
    font-style: normal;
    font-weight: 600;
-   line-height: 1.375em;
+   line-height: 22px;
    color: #A5A5A5;
 }
 
@@ -572,7 +572,7 @@ line-height: 1.375em;
   font-style: normal;
   font-weight: 600;
   font-size: 0.6875em;
-  line-height: 0.9375em;
+  line-height: 15px;
   letter-spacing: 0.205em;
   color: #08A6E4;
   
@@ -583,10 +583,10 @@ line-height: 1.375em;
   font-style: normal;
   font-weight: normal;
   font-size: 0.75em;
-  line-height: 1em;
+  line-height: 16px;
   color: #707070;
-  margin-top: 1.875em;
-  text-indent: -0.9375em;
+  margin-top: 30px;
+  text-indent: -15px;
   
   }
 
@@ -601,7 +601,7 @@ line-height: 1.375em;
    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
    border-radius: 35px;
    width: 50%;
-   height: 3.125em;    
+   height: 50px;    
 }
 
 .emailicono, .telico{
@@ -625,9 +625,7 @@ line-height: 1.375em;
    justify-content: space-between;
    margin-top: auto;
    box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
-   padding: 0.9375em;
-   padding-right: 6.25em;
-   padding-left: 6.25em;
+   padding: 15px 6.25em 15px 6.25em;
 
     }
 
@@ -646,16 +644,16 @@ font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 1.625em;
-line-height: 1.875em;
+line-height:30px;
 color: #08A6E4;
    }
 
 .corig{
-   font-family: Open Sans;
+   font-family: 'Open Sans',sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 0.6875em;
-line-height: 0.9375em;
+line-height:15px;
 color: #A5A5A5;
 }
 
