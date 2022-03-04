@@ -36,17 +36,17 @@ header:hover {
 
 @media only screen and (max-width:1000px) {
 body{
-   background-color: #EB476E;
+   background-color: #ebb4c1;
 }
 
 .benefits {
 grid-template-areas:
 
-". . . . . . . . . ."
-". . . b b b b . . ."
-". . . y y y y . . ."
-". . . i i . t . . ."
-". . . . . . . . . .";
+" . . . . . . . . ."
+" . . b b b b . . ."
+" . . y y y y . . ."
+" . . i i . t . . ."
+" . . . . . . . . .";
         }
    
 }
@@ -182,7 +182,7 @@ color: #A5A5A5;
    display:grid;
    /* grid-template: repeat(10,4fr) / repeat(5,20%); */
    grid-template-columns: repeat(10,10%);
-   grid-auto-rows:minmax(6.25rem, auto);
+   grid-auto-rows:minmax(100px, auto);
    row-gap: 2.5em;
 
    background-color:  #F7F7F7;
