@@ -1,5 +1,4 @@
 /* universal styles */
-
 *{
    margin: 0;
    padding: 0;
@@ -36,8 +35,12 @@ header:hover {
    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
 
+ul {
+   list-style: none;
+}
+
 .cajita_general{
-   max-width: 1352px;
+   max-width: 1440px;
    margin: 0 auto;
    padding-left: 15px;
    padding-right: 15px;
@@ -107,24 +110,55 @@ line-height: 0.9375em;
 letter-spacing:0.205em;
 }
 
-a{
+nav a {
    text-decoration: none;
+   color: #908c8c;
+   font-size: 0.6875em;
+   font-weight: bold;
+   letter-spacing: 3px;
+   cursor: pointer;
 }
 
-a:hover{
-   border-bottom: 0.1875em solid #08A6E4;
-   padding-bottom: 1.6625em;
+nav a:hover {
+   color: black;
+   padding-bottom: 2px;
+   border-bottom: 2px solid #07ACE6;
 }
 
 .titulo {
    color: #08A6E4;
-   padding: 0 3.125em;
    font-family: 'Raleway', 'sans-serif';
    font-style: normal;
    font-weight: 300;
    font-size: 2em;
-
 }
+
+.triggerMenu {
+   width: 100%;
+   background-color: #ffffff;
+   display: none;
+   box-shadow: 0 -3px 6px #00000029;
+   margin-top: 5px;
+}
+.triggerMenu ul {
+   padding: 20px 0 20px 15px;
+}
+.triggerMenu li:not(:last-child) {
+   padding-bottom: 10px;
+}
+.triggerMenu a {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #A5A5A5;
+   font-size: 11px;
+   font-weight: bold;
+   letter-spacing: 3px;
+   cursor: pointer;
+}
+.triggerMenu a:hover {
+   color: black;;
+}
+
 
 .buttonPrinci{
    color:white;
