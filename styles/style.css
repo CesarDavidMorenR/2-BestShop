@@ -66,6 +66,12 @@ nav ul{
 
 /* Meda Queries y responsive */
 
+@media only screen and (max-width:1235px) {
+   body{
+      background-color: rgb(191, 191, 230);
+   }
+      }
+
 @media only screen and (max-width:1000px) {
 body{
    background-color: #fcd2dc;
@@ -121,7 +127,7 @@ nav a {
 
 nav a:hover {
    color: black;
-   padding-bottom: 2px;
+   padding-bottom: 28px;
    border-bottom: 2px solid #07ACE6;
 }
 
@@ -248,11 +254,142 @@ color: #A5A5A5;
    margin-left: 2.1875em;
 }
 
-/* Grid Benfits */
+/* Grid Benfits --Ahora flex box benefits */
 
-.benefits{
+.benefits {
+   width: 100%;
+   background-color: #F7F7F7;
+}
+.benefits .cajita_general {
+   padding: 50px 0;
+}
+.benefits article {
+   height: 370px;
+   width: 90%;
+   background-color: #FFFFFF;
+   margin: auto;
+   border: 1px solid #E8E9ED;
+}
+.primer_rect {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row-reverse;
+   align-items: center;
+}
+.primer_rect_icono {
+   height: 219px;
+   width: 386px;
+   margin-right: 50px;
+   position: relative;
+}
+.primer_rect_fondo {
+   position: relative;
+}
+
+.primer_rect_fondo:before {
+   content: "";
+   width: 125px;
+   height: 125px;
+   background-color: #FB3B64;
+   border-radius: 28px;
+   transform: rotate(45deg);
+   position: absolute;
+   right: 37px;
+   top: -52px;
+   z-index: 0;
+}
+
+.primer_rect_texto {
+   height: 150px;
+   width: 33%;
+   padding-left: 10%;
+}
+.benefits p {
+   font-size: 16px;
+   margin-top: 30px;
+}
+.benefits h2 {
+   font-size: 36px;
+   font-family: 'Raleway', sans-serif;
+}
+
+.linea {
+   height: 4px;
+   width: 320px;
+   margin-top: 50px;
+}
+.primera_linea {
+   background-color: #FB3B64;
+}
+
+article.segunda_recta {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 30px auto;
+}
+
+.segundo_recta_circulo {
+   height: 320px;
+   width: 320px;
+   background-color: #07ACE6;
+   border-radius: 50%;
+   margin-left: 60px;
+}
+.segundo_recta_icono {
+   height: 328px;
+   width: 426px;
+   margin-left: 80px;
+}
+.segundo_recta_texto {
+   height: 150px;
+   width: 33%;
+   padding-right: 10%;
+}
+
+.segunda_linea {
+   background-color: #07ACE6;
+}
+
+.tercer_recta {
+   height: 370px;
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row-reverse;
+   align-items: center;
+}
+.tercer_recta_texto {
+   height: 370px;
+   width: 554px;
+   background-color: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 10%;
+   border: 1px solid #E8E9ED;
+}
+.tercer_recta_fondo img {
+   height: 207px;
+   width: 296px;
+}
+.tercer_recta_fondo {
+   height: 370px;
+   width: 370px;
+   background-color: #55DFB4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.tercera_linea {
+   background-color: #55DFB4;
+}
+
+
+ /* .benefits{
    display:grid;
-   /* grid-template: repeat(10,4fr) / repeat(5,20%); */
    grid-template-columns: repeat(10,10%);
    grid-auto-rows:minmax(50px, auto);
    row-gap: 2.5em;
@@ -264,7 +401,7 @@ color: #A5A5A5;
      ". y y y y y y y y ."
      ". i i i i . t t t ."
      ". . . . . . . . . .";
-     }
+     } 
 
 .baf {
    grid-area: b;
@@ -274,8 +411,7 @@ color: #A5A5A5;
    height: 370px;
    display:flex;
    justify-content: space-between;
-   /* min-width: 800px; */
-   /* max-width: 1000px; */
+
    }
 
 .baf h3{
@@ -285,7 +421,6 @@ color: #A5A5A5;
    font-style: normal;
    font-weight: normal;
    font-size: 2.25em;
-   /* line-height:42px; */
 }
 
 .baf p{
@@ -297,7 +432,6 @@ color: #A5A5A5;
    font-family: 'Open Sans',sans-serif;
    font-style: normal;
    font-weight: normal;
-   /* line-height:22px; */
 }
 
 section.baf_visual{
@@ -307,9 +441,6 @@ section.baf_visual{
    padding-top: 90px;
    width: 200px; 
    height: auto;
-   /* margin: auto; */
-   /* margin-left: 20%; */
-   /* width: fit-content; */
 }
 
 .ysi {
@@ -318,9 +449,6 @@ section.baf_visual{
  border: 1px solid #E8E9ED;
  border-radius: 5px;
  height: 370px;
- /* justify-content: flex-end; */
- /* align-items: center; */
- /* text-indent: 729px; */
 }
 
 .ysi h3{
@@ -332,8 +460,6 @@ section.baf_visual{
    float: right;
    margin-top: 50px;
    margin-right: 15.625em;
-   /* margin-left: 840px; */
-   /* padding-right: 50px; */
    width: 18.75em;
    
 }
@@ -345,11 +471,8 @@ section.baf_visual{
    line-height: 22px;
    float: right;
    width: 31.25em;
-   /* text-indent: 500x; */
-   /* padding-left: 1000px; */
    margin-top: 20px;
    margin-right: 3.125em;
-    /* margin-left: 800px; */
    border-bottom: 4px solid #08A6E4;
    margin-left: 43.75em;
    padding-bottom: 50px;
@@ -412,7 +535,7 @@ section.baf_visual{
 .trumpet img{
    margin-top:100px;
    margin-left: 6.5625rem;
-}
+}  */
 
 /* Sección precios */
 
