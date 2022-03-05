@@ -1,4 +1,4 @@
-/* universal styles */
+universal styles
 
 *{
    margin: 0;
@@ -189,8 +189,8 @@ color: #A5A5A5;
 .benefits{
    display:grid;
    /* grid-template: repeat(10,4fr) / repeat(5,20%); */
-   grid-template-columns: repeat(10,10fr);
-   grid-auto-rows:minmax(100px, auto);
+   grid-template-columns: repeat(10,10%);
+   grid-auto-rows:minmax(50px, auto);
    row-gap: 2.5em;
 
    background-color:  #F7F7F7;
@@ -210,7 +210,7 @@ color: #A5A5A5;
    height: 370px;
    display:flex;
    justify-content: space-between;
-   min-width: 1000px;
+   min-width: 800px;
    /* max-width: 1000px; */
    }
 
@@ -237,32 +237,29 @@ color: #A5A5A5;
 }
 
 section.baf_visual{
-   display: flex;
+   display:flex;
    justify-content:center;
-   
+   padding-right: 250px;
+   padding-top: 90px;
+   width: 200px; 
+   height: auto;
    /* margin: auto; */
    /* margin-left: 20%; */
    /* width: fit-content; */
 }
 
 .macbook{
-   position: absolute;
+   /* position: absolute; */
    /* z-index: 1; */
+   /* padding-bottom: 100px; */
+   /* width: 100%;
+   max-height: 100%; */
 }
 
-/* .baf svg{
-   float: right;
-   margin-right: 6.25em;
-   margin-top: 40px;
-   z-index: 1;
+.baf_visual svg{
+   /* position: relative; */
+   /* padding-bottom: 50px; */
 }
-
-.baf img{
-   z-index: 5;
-   position: relative;
-    margin-left:0px; 
-    margin-top: 10px;
-} */
 
 .ysi {
  grid-area: y;
