@@ -4,6 +4,7 @@ universal styles
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   vertical-align: baseline;
 }
 
 html{
@@ -20,19 +21,36 @@ body{
 
 header{
    border-bottom: 2px solid gray;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0.625em;
+   display: block;
+   /* justify-content: space-between;
+   align-items: center; */
+   padding: 10px;
+   width: 100%;
+   position:fixed;
+   z-index: 2;
+   background-color: white;
 }
 
 header:hover {
    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+}
 
+.cajita_general{
+   max-width: 1352px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.header_primer{
+height: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 
-/* Meida Queries */
+/* Meda Queries */
 
 @media only screen and (max-width:1000px) {
 body{
@@ -210,7 +228,7 @@ color: #A5A5A5;
    height: 370px;
    display:flex;
    justify-content: space-between;
-   min-width: 800px;
+   /* min-width: 800px; */
    /* max-width: 1000px; */
    }
 
@@ -246,19 +264,6 @@ section.baf_visual{
    /* margin: auto; */
    /* margin-left: 20%; */
    /* width: fit-content; */
-}
-
-.macbook{
-   /* position: absolute; */
-   /* z-index: 1; */
-   /* padding-bottom: 100px; */
-   /* width: 100%;
-   max-height: 100%; */
-}
-
-.baf_visual svg{
-   /* position: relative; */
-   /* padding-bottom: 50px; */
 }
 
 .ysi {
