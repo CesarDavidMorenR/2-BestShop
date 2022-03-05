@@ -1,10 +1,10 @@
-universal styles
+/* universal styles */
 
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   vertical-align: baseline;
+   /* vertical-align: baseline; */
 }
 
 html{
@@ -24,9 +24,10 @@ header{
    display: block;
    /* justify-content: space-between;
    align-items: center; */
-   padding: 10px;
+   /* padding: 10px; */
    width: 100%;
    position:fixed;
+   top: 0;
    z-index: 2;
    background-color: white;
 }
@@ -49,8 +50,18 @@ justify-content: space-between;
 align-items: center;
 }
 
+.hamburger {
+ display: none;
+}
 
-/* Meda Queries */
+nav ul{
+ width: 500px;
+ display: flex;
+ justify-content: space-between;
+}
+
+
+/* Meda Queries y responsive */
 
 @media only screen and (max-width:1000px) {
 body{
@@ -76,6 +87,7 @@ section.benefits{
      }
    
    }
+
 
 
 /* Parte inicial */
