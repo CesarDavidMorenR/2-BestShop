@@ -66,11 +66,83 @@ nav ul{
 
 /* Meda Queries y responsive */
 
-@media only screen and (max-width:1235px) {
-   body{
-      background-color: rgb(191, 191, 230);
-   }
-      }
+@media only screen and (min-width: 1001px)  and (max-width:1235px) {
+   .beneficts article {
+      width: 75vw;
+      height: auto;
+  }
+  .primer_rect {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .primer_rect_fondo {
+      width: 100%;
+      text-align: center;
+  }
+  .primer_rect_fondo:before {
+      display: none;
+  }
+  .primer_rect_icono {
+      margin-right: 0;
+      width: 60%;
+      height: auto;
+  }
+
+  .primer_rect_texto {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+      margin-top: 20px;
+  }
+  .segunda_recta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+  }
+  .segundo_recta_texto {
+      width: 100%;
+      padding-right: 0;
+      text-align: center;
+  }
+  .segundo_recta_circulo {
+      margin-left: 0;
+      width: 40%;
+      height: 40%;
+  }
+  .segundo_recta_icono {
+      margin-left: 0;
+      width: 130%;
+      height: 100%;
+  }
+  .tercer_recta {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      width: 75vw;
+      height: auto;
+      padding: 0;
+  }
+  .tercer_recta_texto {
+      width: 100%;
+      height: 100%;
+      padding: 10px 0 10px 0;
+      text-align: center;
+  }
+  .tercer_recta_fondo {
+      width: 100%;
+      height: 100%;
+  }
+  .linea {
+      display: none;
+  }
+}
+
+      
 
 @media only screen and (max-width:1000px) {
 body{
