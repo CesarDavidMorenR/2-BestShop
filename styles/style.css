@@ -712,7 +712,7 @@ article.segunda_recta {
 
 @media screen and (max-width: 1000px) {
 
-   /*HEADER*/
+   /* CABECERA */
    header p {
        font-weight: normal;
    }
@@ -721,22 +721,34 @@ article.segunda_recta {
        display: none;
    }
 
-   /*SECOND SECTION*/
-   .second__section--allColumns {
+   /* WHY US */
+   .twhyus {
        display: block;
+       margin: auto;
    }
 
-   .second__section--column {
-       margin: 20px auto;
+.twhyus_columna_person {
+       margin-top: 20px;
+       margin-right: auto;
+       margin-left: auto;
    }
-
+.twhyus_columna_ojopalo {
+   margin-top: 100px;
+   margin-right: auto;
+   margin-left: auto;
+  }
+.twhyus_columna_catalogpalo {
+   margin-top: 150px;
+   margin-right: auto;
+   margin-left: auto;
+}
    .hamburger {
        display: block;
    }
 
         /*ARTICLES*/
 
-   article {
+   .benefits article {
        width: 75vw;
        height: auto;
    }
