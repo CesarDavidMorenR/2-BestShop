@@ -455,57 +455,57 @@ article.segunda_recta {
      
          /*styles for form*/
      
-     .fifth__section .container {
+     .form_contacto .cajita_general {
          display: flex;
          justify-content: center;
      }
-     .fifth__section--contact {
+     .form_contacto_contact {
          width: 400px;
          display: flex;
          flex-direction: column;
          justify-content: center;
      }
-     .fifth__section--contact > p {
+     .form_contacto_contact > p {
          margin-bottom: 42px;
          margin-top: 22px;
          font-size: 16px;
      }
-     .fifth__section--contact h2 {
+     .form_contacto_contact h2 {
          font-size: 49px;
          font-family: 'Raleway', sans-serif;
      }
-     .leads {
+     .datos {
          display: flex;
      }
-     .leads p {
+     .datos p {
          font-size: 16px;
          font-weight: bold;
          color: #A5A5A5;
          padding: 4px 0;
      }
-     .leads--email {
-         min-width: 180px;
+     .datos_email {
+         min-width: 210px;
          text-align: right;
          background-image: url("../images/Mail Icon.svg");
          background-repeat: no-repeat;
          background-position: left;
          margin-right: 20px;
      }
-     .leads--phone {
-         min-width: 123px;
+     .datos_telf {
+         min-width: 113px;
          text-align: right;
          background-image: url("../images/Phone Icon.svg");
          background-repeat: no-repeat;
          background-position: left;
      }
-     .fifth__section--form {
+     .form_contacto_formu {
          width: 400px;
      }
-     .form--row {
+     .fila_formu {
          display: flex;
          flex-direction: column;
      }
-     .form--row label {
+     .fila_formu label {
          font-size: 11px;
          letter-spacing: 3px;
          color: #08A6E4;
@@ -513,19 +513,19 @@ article.segunda_recta {
          margin-top: 20px;
          margin-bottom: 15px;
      }
-     .last--row {
+     .checkeo {
          display: flex;
          margin-top: 20px;
      }
-     .last--row label {
+     .checkeo label {
          font-size: 12px;
          color: #707070;
      }
-     .form--row input {
+     .fila_formu input {
          border: none;
          border-bottom: 1px solid #95989A;
      }
-     .last--row input[type="checkbox"] {
+     .fila_formu input[type="checkbox"] {
          -webkit-appearance: none;
          -moz-appearance:
                  none;
@@ -543,7 +543,7 @@ article.segunda_recta {
          border: 1px solid #95989A;
          margin-right: 10px;
      }
-     .last--row input[type="checkbox"]:checked:after {
+     .checkeo input[type="checkbox"]:checked:after {
          content: "";
          width: 11px;
          height: 11px;
@@ -557,7 +557,7 @@ article.segunda_recta {
      form {
          position: relative;
      }
-     .fifth__section--form button {
+     .form_contacto_formu button {
          width: 226px;
          height: 57px;
          background-color: #08A6E4;
@@ -569,11 +569,6 @@ article.segunda_recta {
          margin-top: 15px;
          margin-left: 50%;
          float: right;
-         /*position: absolute;*/
-         /*bottom: 0;*/
-         /*right: 0;*/
-         /*transform: translate(-100%, 0);*/
-         /*margin-bottom: 20px;*/
      }
      
      
@@ -586,7 +581,7 @@ article.segunda_recta {
          background-color: #F7F7F7;
          margin-top: 59px;
      }
-     footer .container {
+     footer .cajita_general {
          height: 89px;
          display: flex;
          justify-content: space-between;
@@ -595,15 +590,28 @@ article.segunda_recta {
      footer li {
          display: inline-block;
      }
+
      footer li:last-child {
-         margin-left: 20px;
-     }
+      margin-right: 136px;
+      margin-left: 10px;
+  }
+
      footer h2 {
          font-size: 26px;
          font-weight: lighter;
          color: #08A6E4;
          padding-bottom: 6px;
          font-family: 'Raleway', sans-serif;
+         margin-left: 137px;
+     }
+
+     footer p{
+      font-family: 'Open Sans',sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      color: #A5A5A5;
+      margin-left: 137px;      
      }
      .visible {
          display: block;
@@ -796,7 +804,7 @@ article.segunda_recta {
        width: 100%;
        height: 100%;
    }
-   .line {
+   .linea {
        display: none;
    }
 
@@ -834,20 +842,20 @@ article.segunda_recta {
 
           /*FORM*/
 
-   .fifth__section .container {
+   .form_contacto_contact .cajita_general {
        display: flex;
        flex-direction: column;
        justify-content: center;
        align-items: center;
    }
-   .fifth__section--contact {
+   .form_contacto_contact {
        align-items: center;
        width: 85%;
    }
-   .fifth__section--form {
+   .form_contacto_formu {
        width: 85%;
    }
-   .leads {
+   .datos {
        flex-wrap: wrap;
    }
    .fifth__section--contact > p {
