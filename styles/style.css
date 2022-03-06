@@ -604,7 +604,7 @@ article.segunda_recta {
          color: #08A6E4;
          padding-bottom: 6px;
          font-family: 'Raleway', sans-serif;
-         /* margin-left: 137px; */
+         margin-left: 137px;
      }
 
      footer p{
@@ -613,7 +613,7 @@ article.segunda_recta {
       font-weight: normal;
       font-size: 11px;
       color: #A5A5A5;
-      /* margin-left: 137px; */
+      margin-left: 137px;
      }
      .visible {
          display: block;
@@ -878,6 +878,21 @@ article.segunda_recta {
    .form_contacto_contact h2 {
        text-align: center;
    }
+
+footer h2 {
+    margin-left: 17px;
+}
+
+footer p{
+ margin-left: 17px;
+}
+
+footer li:last-child {
+    margin-right: 30px;
+    margin-left: 14px;
+}
+
+
 }
    
 
