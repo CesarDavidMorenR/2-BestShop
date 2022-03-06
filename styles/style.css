@@ -10,13 +10,6 @@ html{
    font-size: 16px;
 }
 
-/* body{
-   min-height: 100vh; 
-   min-width: 100vw;
-   min-width: 100%;
-   font-size: 16px;
-} */
-
 header{
    border-bottom: 2px solid gray;
    width: 100%;
@@ -349,7 +342,6 @@ article.segunda_recta {
 }
 
 /* Sección precios */
-  /*styles for boxes*/
 
      .precios .cajita_general {
          margin-bottom: 100px;
@@ -385,7 +377,6 @@ article.segunda_recta {
          text-align: center;
      }
      .tabla li {
-         /*text-align: center;*/
          font-size: 14px;
          padding-top: 20px;
          list-style-image: url("../images/Ckechmark-1.svg");
@@ -615,9 +606,10 @@ article.segunda_recta {
       color: #A5A5A5;
       margin-left: 137px;
      }
-     .visible {
-         display: block;
-     }
+
+     .hacer_menu_responsi_visible {
+        display: block;
+    }
      
      
 
@@ -894,6 +886,3 @@ footer li:last-child {
 
 
 }
-   
-
-
