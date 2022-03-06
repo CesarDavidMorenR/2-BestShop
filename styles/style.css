@@ -11,12 +11,12 @@ html{
    font-size: 16px;
 }
 
-body{
+/* body{
    min-height: 100vh; 
-   /* min-width: 100vw; */
+   min-width: 100vw;
    min-width: 100%;
-   /* font-size: 16px; */
-}
+   font-size: 16px;
+} */
 
 header{
    border-bottom: 2px solid gray;
@@ -134,7 +134,9 @@ nav a:hover {
    color:white;
    background-color: #08A6E4;
    border-radius: 2.5em;
-   width: 27.5em;
+   width: 50%;
+   max-width: 500px;
+   min-width: 250px;
    height: 4.1875em;
    border:none;
    font-family: 'Open Sans',sans-serif;
@@ -458,7 +460,10 @@ article.segunda_recta {
      .form_contacto .cajita_general {
          display: flex;
          justify-content: center;
+         flex-direction: column;
+         align-items: center;
      }
+
      .form_contacto_contact {
          width: 400px;
          display: flex;
@@ -872,10 +877,10 @@ article.segunda_recta {
    .datos {
        flex-wrap: wrap;
    }
-   .fifth__section--contact > p {
+   .form_contacto_contact > p {
        text-align: center;
    }
-   .fifth__section--contact h2 {
+   .form_contacto_contact h2 {
        text-align: center;
    }
 }
