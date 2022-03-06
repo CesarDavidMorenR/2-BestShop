@@ -490,7 +490,9 @@ article.segunda_recta {
          background-repeat: no-repeat;
          background-position: left;
          margin-right: 20px;
+         text-decoration: none;
      }
+
      .datos_telf {
          min-width: 113px;
          text-align: right;
