@@ -3,7 +3,6 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   /* vertical-align: baseline; */
 }
 
 html{
@@ -20,10 +19,6 @@ html{
 
 header{
    border-bottom: 2px solid gray;
-   display: block;
-   /* justify-content: space-between;
-   align-items: center; */
-   /* padding: 10px; */
    width: 100%;
    position:fixed;
    top: 0;
@@ -609,7 +604,7 @@ article.segunda_recta {
          color: #08A6E4;
          padding-bottom: 6px;
          font-family: 'Raleway', sans-serif;
-         margin-left: 137px;
+         /* margin-left: 137px; */
      }
 
      footer p{
@@ -618,7 +613,7 @@ article.segunda_recta {
       font-weight: normal;
       font-size: 11px;
       color: #A5A5A5;
-      margin-left: 137px;      
+      /* margin-left: 137px; */
      }
      .visible {
          display: block;
