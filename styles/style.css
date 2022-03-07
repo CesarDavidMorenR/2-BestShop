@@ -346,15 +346,16 @@ article.segunda_recta {
 
 /* Sección precios */
 
-     .precios .cajita_general {
-         margin-bottom: 100px;
+.precios .cajita_general {
+   margin-bottom: 100px;
      }
-     .precios h2 {
-         text-align: center;
-         margin-top: 100px;
-         margin-bottom: 60px;
-         font-size: 36px;
-         font-family: 'Raleway', sans-serif;
+
+ .precios h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
      }
      .tablas {
          display: flex;
