@@ -2,20 +2,19 @@
 <html lang="es">
 <head>
    <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <!-- Permite compatibilidad con navegadores anitguos -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
    <link rel="stylesheet" href="./styles/hamburguer.css">
    <link rel="stylesheet" href="./styles/style.css">
    <link rel="icon" href="https://picsum.photos/200/300/113">
-   <title>OxigenShop</title>
-
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   <title>OxigenShop</title>
 </head>
 
 <body>
@@ -235,14 +234,16 @@
 
   <!-- Para que funcione hamburguesa -->
   <script>
-      let hamburger = document.querySelector(".hamburger");
+      /* Se pone cualquier nombre despues de let y luego llama a las clases que se va a usar para funcionar hamburguesa (.hamburger y .triggermenu) */
+      let cualquiernombre = document.querySelector(".hamburger");
       let menu = document.querySelector(".triggerMenu");
 
-      /*  Hace que hamburguesa se mueva llama a hamburguer.css */
-      hamburger.addEventListener("click", function() {
-          hamburger.classList.toggle("is-active");
+      /*  Hace que hamburguesa se mueva llama a clase "is-active" de hamburguer.css */
+      cualquiernombre.addEventListener("click", function() {
+          cualquiernombre.classList.toggle("is-active");
       });
-      hamburger.addEventListener('click', function () {
+      cualquiernombre.addEventListener('click', function () {
+          /* Se pone cualquier nombre entre parentesis llamando a clase en el css principal para hacer visible el menu despues pinchar hamburguesa */
           menu.classList.toggle("hacer_menu_responsi_visible")
       })
   </script>
