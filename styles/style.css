@@ -5,23 +5,28 @@
    box-sizing: border-box;
 }
 
+:root{
+    --open:'Open sans',sans-serif ;
+    --rale: 'Raleway', sans-serif;
+    
+}
+
 html{
    /* font-size: 1rem; */
    font-size: 16px;
-  
+}
+
+body{
+    font-family: var(--open);
 }
 
 header{
-   border-bottom: 2px solid gray;
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
    width: 100%;
    position:fixed;
    top: 0;
    z-index: 2;
    background-color: white;
-}
-
-header:hover {
-   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
 
 ul {
@@ -80,8 +85,7 @@ padding: 0 3.125em;
 color:#A5A5A5;
 font-family: 'Open Sans', 'sans-serif';
 font-weight:bold;
-font-size: 0.6875em;
-line-height: 0.9375em;
+font-size: 0.6875rem;
 letter-spacing:0.205em;
 }
 
@@ -106,6 +110,7 @@ nav a:hover {
    font-style: normal;
    font-weight: 300;
    font-size: 2em;
+   margin-left: 136px;
 }
 
 .triggerMenu {
@@ -142,10 +147,8 @@ nav a:hover {
    color:white;
    background-color: #08A6E4;
    border-radius: 2.5em;
-   width: 50%;
-   max-width: 500px;
-   min-width: 250px;
-   height: 4.1875em;
+   width: 425px;
+   height: 67px;
    border:none;
    font-family: 'Open Sans',sans-serif;
   font-style: normal;
@@ -159,19 +162,18 @@ nav a:hover {
 }
 
 .tituPrinci {
-font-family: 'Raleway', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 3.0625em;
-line-height: 100px;
-margin-top: 100px;
-   
-}
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.0625em;
+    line-height: 100px;
+    margin-top: 100px;}
 
 .titu2Princi{
 font-family: 'Open Sans',sans-serif;
 font-style: normal;
 font-weight: normal;
+font-size: 1rem;
 }
 
 /* Sección Why us */
@@ -640,6 +642,11 @@ article.segunda_recta {
       width: 75vw;
       height: auto;
   }
+
+.titulo{
+    margin-left: 96px;
+}
+
   .primer_rect {
       display: flex;
       flex-direction: column;
@@ -730,6 +737,11 @@ article.segunda_recta {
    nav {
        display: none;
    }
+
+.titulo{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
 
    /* WHY US */
    .twhyus {
@@ -901,6 +913,11 @@ footer li:last-child {
     margin-right: 30px;
     margin-left: 14px;
 }
+
+.buttonPrinci{
+    width: 310px;
+
+ }
 
 
 }

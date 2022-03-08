@@ -27,7 +27,12 @@ For a more comprehensive solution, we can use tools such as Modernizr or Polyfil
 
 Let’s implement Polyfill.io in our Pleasant Cafe website. Polyfill.io will check and apply polyfills for CSS features that are not natively supported by older browsers.
 
-Inside the <head> element of index.html, add the following <script> element:
+Inside the <head> element of index.html, add the following <script> element
+
+    Until feature queries become more established and universally supported by browsers, we should try our best to always write our code to work as well as possible even if the browser does not support feature queries.
+
+Design Philosophies for Browser Compatibility
+Now that we are familiar with the syntax and logic of feature queries and some best practices when using them, let’s discuss our design philosophy and ways of thinking about providing browser compatibility. There are two design philosophies for making websites compatible across browsers: graceful degradation and progressive enhancement. The tools you use will depend on the approach you take. Feature queries are a tool best used in a progressive enhancement approach
 -->
 </head>
 
