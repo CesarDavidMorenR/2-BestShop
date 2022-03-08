@@ -8,6 +8,7 @@
 html{
    /* font-size: 1rem; */
    font-size: 16px;
+  
 }
 
 header{
@@ -25,6 +26,17 @@ header:hover {
 
 ul {
    list-style: none;
+}
+
+p{
+    line-height: 1.5; /* The default value of line-height in browsers is around 1.2—however, Web Content Accessibility Standards recommend a minimum of 1.5 within paragraphs. */
+    letter-spacing: 0.5rem; /* he letter-spacing property provides additional visual clarity by controlling the space between individual letters in a word—the value of letter-spacing property defaults to normal in browsers. Providing a value to this property (for example, 0.5em) will expand or contract the space between letters. Letter spacing is also accessible from screen readers’ perspective as it allows characters to be spaced without the use of actual space characters (). Some screen readers will read each letter individually if spacing characters are used, which will make the text incomprehensible to users. */
+    text-align: left;
+    min-width:45ch ;
+    max-width:85ch; /* Generally, it is recommended to align text using left, right, or center values. The justify value can also be used but can cause a decrease in readability because it creates uneven word spacing to create equal line lengths.
+
+    Paragraph width can also impact readability. It is recommended to have 45 to 85 characters per line, with the ideal being suggested as 65 characters. In the above example, we set the width using px as the unit of measure. A more appropriate unit for this purpose is the ch unit, with 1ch being equivalent to the width of the zero (0) character. The ch unit also scales with changes in the value of the font-family or font-size property. */
+
 }
 
 .cajita_general{
