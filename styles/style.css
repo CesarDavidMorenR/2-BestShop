@@ -37,7 +37,10 @@ p{
     min-width:45ch ;
     max-width:85ch;  Generally, it is recommended to align text using left, right, or center values. The justify value can also be used but can cause a decrease in readability because it creates uneven word spacing to create equal line lengths.
 
-    Paragraph width can also impact readability. It is recommended to have 45 to 85 characters per line, with the ideal being suggested as 65 characters. In the above example, we set the width using px as the unit of measure. A more appropriate unit for this purpose is the ch unit, with 1ch being equivalent to the width of the zero (0) character. The ch unit also scales with changes in the value of the font-family or font-size property. */
+    Paragraph width can also impact readability. It is recommended to have 45 to 85 characters per line, with the ideal being suggested as 65 characters. In the above example, we set the width using px as the unit of measure. A more appropriate unit for this purpose is the ch unit, with 1ch being equivalent to the width of the zero (0) character. The ch unit also scales with changes in the value of the font-family or font-size property. 
+    Text should be at least 18px
+    
+    */
 
 }
 
