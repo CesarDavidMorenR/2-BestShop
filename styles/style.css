@@ -517,9 +517,6 @@ article.segunda_recta {
      }
 
      .datos_telf {
-         min-width: 113px;
-         /* text-align: right; */
-         /* translate: 70px; */
          display:flex;
      }
 
@@ -739,6 +736,11 @@ article.segunda_recta {
   .linea {
       display: none;
   }
+
+  /* datos de contacto */
+
+
+
 }
 
 
@@ -890,6 +892,15 @@ article.segunda_recta {
    .segunda_tabla {
        margin: 60px 0;
    }
+
+/* contact seccion */
+.datos_email{
+    margin-right: 15px;
+}
+
+.datos_telf{
+    margin-left: -20px;
+}
 
           /*FORM*/
 
