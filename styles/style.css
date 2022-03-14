@@ -290,7 +290,7 @@ font-size: 16px;
 }
 .benefits p {
    font-size: 16px;
-   margin-top: 30px;
+   margin-top: 20px;
 }
 .benefits h2 {
    font-size: 36px;
@@ -300,10 +300,10 @@ font-size: 16px;
 .linea {
    height: 4px;
    width: 320px;
-   margin-top: 50px;
 }
 .primera_linea {
    background-color: #FB3B64;
+   margin-top: 30px;
 }
 
 article.segunda_recta {
@@ -326,13 +326,13 @@ article.segunda_recta {
    margin-left: 80px;
 }
 .segundo_recta_texto {
-   height: 150px;
    width: 33%;
    padding-right: 10%;
 }
 
 .segunda_linea {
    background-color: #07ACE6;
+   margin-top:  30px;
 }
 
 .tercer_recta {
