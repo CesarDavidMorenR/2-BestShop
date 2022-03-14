@@ -346,7 +346,7 @@ article.segunda_recta {
 }
 .tercer_recta_texto {
    height: 370px;
-   width: 554px;
+   width: 795px;
    background-color: #FFFFFF;
    display: flex;
    flex-direction: column;
@@ -360,7 +360,7 @@ article.segunda_recta {
 }
 .tercer_recta_fondo {
    height: 370px;
-   width: 370px;
+   width: 440px;
    background-color: #55DFB4;
    display: flex;
    justify-content: center;
@@ -678,6 +678,7 @@ article.segunda_recta {
       margin-right: 0;
       width: 60%;
       height: auto;
+      margin-bottom: 28px;
   }
 
   .primer_rect_texto {
