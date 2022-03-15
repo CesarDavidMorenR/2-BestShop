@@ -933,12 +933,36 @@ article.segunda_recta {
        width: 100%;
        height: 100%;
        padding: 10px 0 10px 0;
-       text-align: center;
    }
+   
+.tercer_recta_texto h2 {
+    text-align:left;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 31px;
+}
+
+.br{
+    display: none;
+}
+
+.tercer_recta_texto p{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
    .tercer_recta_fondo {
        width: 100%;
        height: 100%;
    }
+
+   .tercer_recta_fondo img{
+       margin-top: 50px;
+   }
+
    .linea {
        display: none;
    }
