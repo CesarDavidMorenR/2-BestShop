@@ -763,7 +763,22 @@ article.segunda_recta {
 
    /* CABECERA */
    header p {
-       font-weight: normal;
+       font-weight: 400;
+   }
+
+
+   /* seccion principal */
+
+   .tituPrinci{
+       font-size:2.1875rem;
+       font-weight: 400;
+       margin-top:150px;
+   }
+
+
+
+   .imgorde {
+       margin-top: 50px;
    }
 
    nav {
@@ -776,6 +791,19 @@ article.segunda_recta {
 }
 
    /* WHY US */
+
+.whyus {
+    margin-bottom: 75px;
+}
+
+.whyus h2{
+    font-size: 30px;
+    font-style: normal;
+    width:303px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
    .twhyus {
        display: block;
        margin: auto;
@@ -787,12 +815,12 @@ article.segunda_recta {
        margin-left: auto;
    }
 .twhyus_columna_ojopalo {
-   margin-top: 100px;
+   margin-top: 25px;
    margin-right: auto;
    margin-left: auto;
   }
 .twhyus_columna_catalogpalo {
-   margin-top: 150px;
+   margin-top: 25px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -801,6 +829,11 @@ article.segunda_recta {
    }
 
         /*ARTICLES*/
+
+    .benefits .cajita_general{
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
 
    .benefits article {
        width: 75vw;
@@ -842,7 +875,18 @@ article.segunda_recta {
        width: 100%;
        padding-right: 0;
        text-align: center;
+       margin-left: 0;
    }
+
+.segunda_recta_texto h2 {
+    font: size 30px;
+}
+
+.segunda_recta_texto p{
+    font-size: 14px;
+    
+}
+
    .segundo_recta_circulo {
        margin-left: 0;
        width: 40%;
