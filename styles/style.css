@@ -724,6 +724,7 @@ article.segunda_recta {
       width: 100%;
       padding-right: 0;
       text-align: center;
+      margin-left:0;
   }
 
   .segundo_recta_circulo {
