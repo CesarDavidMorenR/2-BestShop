@@ -285,7 +285,7 @@ font-size: 16px;
 
 .primer_rect_texto {
    height: 170px;
-   width: 43%;
+   width: 49%;
    padding-left: 10%;
 }
 .benefits p {
@@ -327,8 +327,9 @@ article.segunda_recta {
    margin-left: 80px;
 }
 .segundo_recta_texto {
-   width: 33%;
-   padding-right: 10%;
+   width: 49%;
+   padding-right: 20px;
+   margin-left: 250px;
 }
 
 .segunda_linea {
@@ -393,7 +394,6 @@ article.segunda_recta {
          width: 372px;
          height: 461px;
          border-radius: 18px;
-         box-shadow: 5px 10px 27px #07ACE629;
          display: block;
          position: relative;
          min-width: 255px;
@@ -452,10 +452,21 @@ article.segunda_recta {
          border: 1px solid #07ACE6;
          transform: scale(1.1);
          margin: 0 20px;
+         pointer-events: none;
      }
 
      .segunda_tabla button {
          background-color: #07ACE6;
+         pointer-events:auto;
+     }
+
+     .segunda_tabla:hover{
+        box-shadow: 5px 10px 27px #07ACE629;
+     }
+
+     .btn-primary:hover {
+     
+        box-shadow: 5px 10px 27px #07ACE629;
      }
 
      .tercera_tabla {
@@ -596,6 +607,9 @@ article.segunda_recta {
          float: right;
      }
      
+     .form_contacto_formu button:hover{
+        box-shadow: 5px 10px 27px #07ACE629;
+     }
      
           /*styles for footer*/
      
