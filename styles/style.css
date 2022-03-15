@@ -278,19 +278,19 @@ font-size: 16px;
    border-radius: 28px;
    transform: rotate(45deg);
    position: absolute;
-   right: 71px;
-   top: -30px;
+   right: 51px;
+   top: 15px;
    z-index: 0;
 }
 
 .primer_rect_texto {
-   height: 150px;
-   width: 33%;
+   height: 170px;
+   width: 43%;
    padding-left: 10%;
 }
 .benefits p {
    font-size: 16px;
-   margin-top: 20px;
+   margin-top: 30px;
 }
 .benefits h2 {
    font-size: 36px;
@@ -298,6 +298,7 @@ font-size: 16px;
 }
 
 .linea {
+   margin-top: 50px;
    height: 4px;
    width: 320px;
 }
