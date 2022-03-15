@@ -1057,12 +1057,17 @@ footer p{
 
 footer li:last-child {
     margin-right: 30px;
-    margin-left: 14px;
+    margin-left: 20px;
 }
 
 .buttonPrinci{
     width: 310px;
 
+ }
+
+ .cajita_general{
+     padding-left: 0;
+     padding-right: 0;
  }
 
 
