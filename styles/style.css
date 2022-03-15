@@ -424,7 +424,6 @@ article.segunda_recta {
      .tabla h4 {
          font-size: 46px;
          font-weight: lighter;
-         color: #FB3B64;
          line-height: 200%;
          text-align: center;
      }
@@ -444,6 +443,11 @@ article.segunda_recta {
      .primera_tabla {
          border: 1px solid #FB3B64;
      }
+
+     .primera_tabla h4{
+        color: #FB3B64;
+     }
+
      .primera_tabla button {
          background-color: #EB476E;
      }
@@ -453,6 +457,10 @@ article.segunda_recta {
          transform: scale(1.1);
          margin: 0 20px;
          pointer-events: none;
+     }
+
+     .segunda_tabla h4{
+        color: #07ACE6;
      }
 
      .segunda_tabla button {
@@ -471,6 +479,10 @@ article.segunda_recta {
 
      .tercera_tabla {
          border: 1px solid #55DFB4;
+     }
+
+     .tercera_tabla h4{
+        color: #55DFB4;
      }
 
      .tercera_tabla button {
@@ -985,6 +997,7 @@ article.segunda_recta {
    }
    .tabla ul {
        margin-top: 0;
+       margin-left: 34px;
    }
    .tabla li {
        list-style-position: outside;
