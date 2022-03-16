@@ -401,7 +401,7 @@ article.segunda_recta {
          border-radius: 18px;
          display: block;
          position: relative;
-         min-width: 255px;
+         min-width: 293px;
      }
      .tabla ul {
          margin-top: 50px;
@@ -459,7 +459,7 @@ article.segunda_recta {
 
      .segunda_tabla {
          border: 1px solid #07ACE6;
-         transform: scale(1.1);
+         /* transform: scale(1.1); */
          margin: 0 20px;
          pointer-events: none;
      }
@@ -1023,6 +1023,7 @@ article.segunda_recta {
    }
    .segunda_tabla {
        margin: 60px 0;
+       height: 251px;
    }
 
 /* contact seccion */
