@@ -405,7 +405,7 @@ article.segunda_recta {
      }
      .tabla ul {
          margin-top: 50px;
-         text-align: center;
+         text-align: left;
      }
      .tabla p {
          font-family: 'Raleway', sans-serif;
@@ -993,6 +993,11 @@ article.segunda_recta {
    }
 
         /*BOXES*/
+
+    .precios h2 {
+        margin-top: 53px;
+        margin-bottom:14px;
+    }
 
    .tablas {
        display: flex;
