@@ -96,11 +96,11 @@ nav a {
    font-weight: bold;
    letter-spacing: 3px;
    cursor: pointer;
+   font-family: var(--open);
 }
 
 nav a:hover {
-    font-style: normal;
-    font-weight: bold;
+    font-weight: bolder;
     color: #000000;
     text-align: center;
    padding-bottom: 28px;
@@ -137,7 +137,7 @@ nav a:hover {
    text-decoration: none;
    color: #A5A5A5;
    font-size: 11px;
-   font-weight: bold;
+   font-weight: 800;
    letter-spacing: 3px;
    cursor: pointer;
 }
@@ -298,6 +298,7 @@ font-size: 16px;
 .benefits h2 {
    font-size: 36px;
    font-family: 'Raleway', sans-serif;
+   font-weight:400;
 }
 
 .linea {
@@ -474,7 +475,7 @@ article.segunda_recta {
 
      .segunda_tabla:hover{
         box-shadow: 5px 10px 27px #07ACE629;
-        transform: scale(1.15);
+        transform: scale(1.12);
      }
 
      .btn-primary:hover {
@@ -506,8 +507,8 @@ article.segunda_recta {
      .form_contacto .cajita_general {
          display: flex;
          justify-content: center;
-         flex-direction: column;
          align-items: center;
+         margin-top:175px;
      }
 
      .form_contacto_contact {
@@ -515,24 +516,27 @@ article.segunda_recta {
          display: flex;
          flex-direction: column;
          justify-content: center;
+         margin-bottom: 170px;
+         margin-right: 122px;
      }
      .form_contacto_contact > p {
-         margin-bottom: 42px;
-         margin-top: 22px;
+         margin-bottom: 22px;
+         margin-top: 10px;
          font-size: 16px;
+         font-weight:400;
      }
      .form_contacto_contact h2 {
          font-size: 49px;
          font-family: 'Raleway', sans-serif;
+         font-weight: 400;
      }
      .datos {
          display: flex;
      }
      .datos p {
          font-size: 16px;
-         font-weight: bold;
          color: #A5A5A5;
-
+         font-weight: 600;
      }
 
      .datos_email {
@@ -566,9 +570,10 @@ article.segunda_recta {
          letter-spacing: 3px;
          color: #08A6E4;
          font-weight: bold;
-         margin-top: 20px;
+         margin-top: 43px;
          margin-bottom: 15px;
      }
+
      .checkeo {
          display: flex;
          margin-top: 20px;
@@ -576,10 +581,12 @@ article.segunda_recta {
      .checkeo label {
          font-size: 12px;
          color: #707070;
+         font-weight:400;
      }
      .fila_formu input {
          border: none;
          border-bottom: 1px solid #95989A;
+         margin-top: 5px;
      }
      .fila_formu input[type="checkbox"] {
          appearance:
@@ -590,7 +597,7 @@ article.segunda_recta {
          vertical-align: middle;
          border-radius: 4px;
          box-shadow: 1px solid #95989A;
-         background: #eee;
+         background: rgb(255, 255, 255);
          outline: none;
          position: relative;
          border: 1px solid #95989A;
@@ -619,7 +626,7 @@ article.segunda_recta {
          font-size: 13px;
          font-weight: bold;
          color: white;
-         margin-top: 15px;
+         margin-top: 33px;
          margin-left: 50%;
          float: right;
      }
@@ -654,7 +661,7 @@ article.segunda_recta {
 
      footer h2 {
          font-size: 26px;
-         font-weight: lighter;
+         font-weight: normal;
          color: #08A6E4;
          padding-bottom: 6px;
          font-family: 'Raleway', sans-serif;
@@ -1021,6 +1028,7 @@ article.segunda_recta {
 /* contact seccion */
 .datos_email{
     margin-right: 15px;
+    margin-bottom: 17px ;
 }
 
 .datos_telf{
@@ -1028,6 +1036,14 @@ article.segunda_recta {
 }
 
           /*FORM*/
+
+          .form_contacto .cajita_general {
+flex-direction:column;
+justify-content: center;
+margin-top: 53px;
+margin-bottom:44px;
+        }
+
 
    .form_contacto_contact .cajita_general {
        display: flex;
@@ -1037,7 +1053,10 @@ article.segunda_recta {
    }
    .form_contacto_contact {
        align-items: center;
-       width: 85%;
+       width: 93%;
+       margin-left: 162px;
+       margin-bottom:19px;
+       /* margin-right: 45px; */
    }
    .form_contacto_formu {
        width: 85%;
@@ -1045,11 +1064,17 @@ article.segunda_recta {
    .datos {
        flex-wrap: wrap;
    }
+
    .form_contacto_contact > p {
-       text-align: center;
+       text-align: left;
+       margin-right: 85px;
+       margin-bottom: 38px;
    }
    .form_contacto_contact h2 {
-       text-align: center;
+       text-align: left;
+       font-size:40px;
+       margin-right: 70px;
+       
    }
 
 footer h2 {
