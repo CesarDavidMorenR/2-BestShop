@@ -1067,13 +1067,13 @@ margin-bottom:44px;
 
    .form_contacto_contact > p {
        text-align: left;
-       margin-right: 85px;
+       margin-left: -65px;
        margin-bottom: 38px;
    }
    .form_contacto_contact h2 {
        text-align: left;
        font-size:40px;
-       margin-right: 70px;
+       margin-right: 50px;
        
    }
 
