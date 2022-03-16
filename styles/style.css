@@ -99,7 +99,10 @@ nav a {
 }
 
 nav a:hover {
-   color: black;
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
    padding-bottom: 28px;
    border-bottom: 2px solid #07ACE6;
 }
