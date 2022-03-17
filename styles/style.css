@@ -461,7 +461,7 @@ article.segunda_recta {
          border: 1px solid #07ACE6;
          /* transform: scale(1.1); */
          margin: 0 20px;
-         pointer-events: none;
+         /* pointer-events: none; */
      }
 
      .segunda_tabla h4{
@@ -470,7 +470,7 @@ article.segunda_recta {
 
      .segunda_tabla button {
          background-color: #07ACE6;
-         pointer-events:auto;
+         /* pointer-events:auto; */
      }
 
      .segunda_tabla:hover{
