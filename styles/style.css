@@ -557,6 +557,11 @@ article.segunda_recta {
          padding-right: 10px;
          margin-left: 20px;
      }
+
+     .datos_telf a{
+         text-decoration: none;
+         display: inline;
+     }
      
      .form_contacto_formu {
          width: 400px;
