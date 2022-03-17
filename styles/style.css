@@ -856,6 +856,7 @@ article.segunda_recta {
 }
    .hamburger {
        display: block;
+       margin-right: 29px;
    }
 
         /*ARTICLES*/
