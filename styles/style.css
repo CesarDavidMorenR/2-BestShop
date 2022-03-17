@@ -1011,7 +1011,7 @@ article.segunda_recta {
        justify-content: space-evenly;
        align-items: center;
        width: 70%;
-       padding: 40px 10px;
+       padding: 35px 10px;
    }
    .tabla ul {
        margin-top: 0;
@@ -1027,19 +1027,33 @@ article.segunda_recta {
    .tabla h3 {
        margin-top: 0;
    }
+   .primera_tabla{
+       height:251px;
+   }
+
    .segunda_tabla {
        margin: 60px 0;
        height: 251px;
    }
 
+   .tercera_tabla{
+       height: 251px;
+   }
+
 /* contact seccion */
+
+.datos {
+    flex-wrap: wrap;
+}
+
 .datos_email{
     margin-right: 15px;
-    margin-bottom: 17px ;
+    margin-bottom: 7px ;
 }
 
 .datos_telf{
     margin-left: -20px;
+    width: 50%;
 }
 
           /*FORM*/
@@ -1068,9 +1082,7 @@ margin-bottom:44px;
    .form_contacto_formu {
        width: 85%;
    }
-   .datos {
-       flex-wrap: wrap;
-   }
+
 
    .form_contacto_contact > p {
        text-align: left;

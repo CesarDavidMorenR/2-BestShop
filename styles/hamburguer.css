@@ -33,7 +33,9 @@
    width: 30px;
    height: 24px;
    display: inline-block;
-   position: relative; }
+   position: relative; 
+   margin-right: 29px;
+}
 
 .hamburger-inner {
    display: block;
