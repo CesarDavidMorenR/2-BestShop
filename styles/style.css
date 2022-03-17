@@ -174,8 +174,8 @@ nav a:hover {
 .titu2Princi{
 font-family: 'Open Sans',sans-serif;
 font-style: normal;
-font-weight: normal;
-font-size: 1rem;
+font-weight: 400;
+font-size: 16px;
 }
 
 /* Sección Why us */
@@ -803,6 +803,11 @@ article.segunda_recta {
        font-size:2.1875rem;
        font-weight: 400;
        margin-top:150px;
+   }
+
+   .titu2Princi{
+    width:240px;
+    margin: 0 auto;
    }
 
 
