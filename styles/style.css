@@ -405,7 +405,7 @@ article.segunda_recta {
      }
      .tabla ul {
          margin-top: 50px;
-         text-align: left;
+         text-align: center;
      }
      .tabla p {
          font-family: 'Raleway', sans-serif;
@@ -1016,6 +1016,7 @@ article.segunda_recta {
    .tabla ul {
        margin-top: 0;
        margin-left: 34px;
+       text-align: left;
    }
    .tabla li {
        list-style-position: outside;
