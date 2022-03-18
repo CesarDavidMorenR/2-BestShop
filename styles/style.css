@@ -449,6 +449,10 @@ article.segunda_recta {
          border:  1px solid #FB3B64;
      }
 
+     .primera_tabla:hover {
+         transform: scale(1.12);
+     }
+
      .primera_tabla h4{
         color: #FB3B64;
      }
