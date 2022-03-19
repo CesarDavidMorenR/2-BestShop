@@ -29,6 +29,13 @@ header{
    background-color: white;
 }
 
+#xq,#benefits,#price,#contact{
+    display: block;
+    height: 80px; 
+    margin-top: -80px; 
+    /* EL margin top  negativo ANULA el height */
+}
+
 ul {
    list-style: none;
 }
