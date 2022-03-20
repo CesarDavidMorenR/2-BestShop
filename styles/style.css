@@ -29,6 +29,8 @@ header{
    background-color: white;
 }
 
+/* Lineas para navegar en la web */
+
 #xq,#benefits,#price,#contact,#home{
     display: block;
     height: 80px; 
