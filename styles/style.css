@@ -91,7 +91,15 @@ nav ul{
  justify-content: space-between;
 }
 
-/* Parte inicial */
+/* Parte de header */
+
+.percentage-scroller {
+    height: 4px;
+    background: linear-gradient(90deg, blue 25%, red 100%);
+    position: fixed;
+    z-index: 2;
+    transition: 200ms;
+  }
 
 .princi{
    text-align: center;
