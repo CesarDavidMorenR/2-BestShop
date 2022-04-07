@@ -32,13 +32,16 @@ header{
 /* Lineas para navegar en la web */
 
 #xq,#benefits,#price {
-    display: inline-flex;
-    height: 80%; 
-    margin-top: -20%; 
+    display: block;
+    height: 80px; 
+    margin-top: -80px; 
     /* EL margin top  negativo ANULA el height */
 }
 
-
+#home{
+   position: absolute;
+   top: 0;
+}
 
 .titulo a{
     text-decoration: none;
