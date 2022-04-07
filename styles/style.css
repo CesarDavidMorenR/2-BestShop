@@ -29,7 +29,7 @@ header{
    background-color: white;
 }
 
-/* Lineas para navegar en la web */
+/* Links para navegar en la web */
 
 #xq,#benefits,#price {
     display: block;
@@ -41,6 +41,22 @@ header{
 #home{
    position: absolute;
    top: 0;
+}
+
+/* Return to top Botton */
+
+.btn-return-top{
+    height: 50px;
+    width: 50px;
+    background-color: #08A6E4;
+    position: fixed;
+    top: 581px;
+    right: 0;
+    margin-right: 10px;
+    z-index: 2;
+    border-radius:50%;
+    opacity: 0.5;
+    transition: 200ms;
 }
 
 .titulo a{
