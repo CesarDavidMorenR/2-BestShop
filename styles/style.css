@@ -31,12 +31,14 @@ header{
 
 /* Lineas para navegar en la web */
 
-#xq,#benefits,#price,#contact,#home{
-    display: block;
-    height: 80px; 
-    margin-top: -80px; 
+#xq,#benefits,#price {
+    display: inline-flex;
+    height: 80%; 
+    margin-top: -20%; 
     /* EL margin top  negativo ANULA el height */
 }
+
+
 
 .titulo a{
     text-decoration: none;
@@ -477,7 +479,7 @@ article.segunda_recta {
 
      .primera_tabla:hover {
          transform: scale(1.12);
-         transition:200ms;
+         transition:300ms;
      }
 
      .primera_tabla h4{
@@ -507,7 +509,7 @@ article.segunda_recta {
      .segunda_tabla:hover{
         box-shadow: 5px 10px 27px #07ACE629;
         transform: scale(1.12);
-        transition: 200ms;
+        transition: 300ms;
      }
 
      .btn-primary:hover {
@@ -521,7 +523,7 @@ article.segunda_recta {
 
      .tercera_tabla:hover{
         transform: scale(1.12);
-        transition: 200ms;
+        transition: 300ms;
      }
 
      .tercera_tabla h4{
