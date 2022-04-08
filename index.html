@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <!-- Permite compatibilidad con navegadores anitguos -->
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width,  initial-scale=1.0">
    <link rel="stylesheet" href="./styles/hamburguer.css">
    <link rel="stylesheet" href="./styles/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,10 @@
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
    <link rel="icon" href="https://oxygenworkspace.com/wp-content/uploads/2020/12/cropped-OXY-32x32.jpg"> <!-- Esto es para el favicon -->
    <title>OxigenShop</title>
-   <script src="https://polyfill.io/v3/polyfill.min.js"></script> <!-- Polyfills provide a way to support newer web features on older browsers. 
+   <script src="./JS/hamburguerJS.js" defer></script>
+   <script src="./JS/percentage-scroller.js" defer></script>
+   <script src="./JS/returnToTop.js" defer></script>
+   <script src="https://polyfill.io/v3/polyfill.min.js" async></script> <!-- Polyfills provide a way to support newer web features on older browsers. 
 BROWSER COMPATIBILITY
 Polyfills
 It’s difficult to keep track of which CSS properties are not supported in certain browsers and their versions. Polyfills are JavaScript codes that allow older browsers to behave as though they understand more advanced features than they actually do. These codes rewrite the HTML and CSS codes to simulate features that have not yet been adopted by that version of the browser.
@@ -37,11 +40,13 @@ Now that we are familiar with the syntax and logic of feature queries and some b
    <header>
       <section class="header_primer cajita_general">
          <h1 class="titulo"><a href="#home">OXYGEN Shop</a></h1>
-         <button class="hamburger hamburger--squeeze"       type="button">
+         
+         <button class="hamburger hamburger--emphatic-r"       type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
         </button>
+        
         <nav>
           <ul>
            <li class="cabeza"><a href="#xq">WHY US</a></li>
@@ -50,7 +55,9 @@ Now that we are familiar with the syntax and logic of feature queries and some b
            <li class="cabeza"><a href="#contact">CONTACT</a></li>
           </ul>
          </nav>
+         
       </section>
+      
       <div class="triggerMenu">
          <ul>
              <li><a href="#xq">why us</a></li>
@@ -59,10 +66,11 @@ Now that we are familiar with the syntax and logic of feature queries and some b
              <li><a href="#contact">contact</a></li>
          </ul>
      </div>
+     <div class="percentage-scroller"></div>
    </header>
    
    <main class="princi">
-    
+    <button  class="btn-return-top"></button>
             <section class="cajita_general">
                 <span id="home"></span>
                <h1 class="tituPrinci">Sell More!</h1>
@@ -70,7 +78,7 @@ Now that we are familiar with the syntax and logic of feature queries and some b
                <button class="buttonPrinci">Open your shop</button>
             </section>
             <img  class="imgorde" src="./images/Background.png" alt="imagen fondo" width="100%">
-           
+
    </main>
       
    <section class="whyus" >
@@ -98,7 +106,7 @@ Now that we are familiar with the syntax and logic of feature queries and some b
             </div> 
          
    </section>
-
+  
    <section class="benefits">
        <span id="benefits"></span>
          <div class="cajita_general">
@@ -225,7 +233,7 @@ Now that we are familiar with the syntax and logic of feature queries and some b
                   <form action="./index.html" method="POST">
                       <div class="fila_formu">
                           <label for="name">NAME</label>
-                          <input type="text" id="name" name="name">
+                          <input minlength="2" maxlength="100" required type="text" id="name" name="name">
                       </div>
                       <div class="fila_formu">
                           <label for="email">EMAIL</label>
@@ -248,32 +256,16 @@ Now that we are familiar with the syntax and logic of feature queries and some b
    <footer>
       <div class="cajita_general">
           <div>
-              <h2>OXYGENShop</h2>
+              <a class="footerHome" href="#home">
+                  <h2>OXYGENShop</h2>
+              </a>
               <p>&copy;2022 OXYGEN, All Rights Reserved</p>
           </div>
           <ul>
-              <li><a href="#"><img src="./images/Twitter.svg" alt="icon twitter"></a></li>
-              <li><a href="#"><img src="./images/Facebook.svg" alt="icon facebook"></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/oxygenworkspace/"><img src="./images/Twitter.svg" alt="icon twitter"></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/oxygenworkspace/"><img src="./images/Facebook.svg" alt="icon facebook"></a></li>
           </ul>
       </div>
    </footer>
-
-  <!-- Para que funcione hamburguesa -->
-   <script>
-      /* Se pone cualquier nombre despues de let y luego llama a las clases que se va a usar para funcionar hamburguesa (.hamburger y .triggermenu) */
-
-      /* "Var" se puede usar, pero usar preferiblemnte "let" */
-      let cualquiernombre = document.querySelector(".hamburger");
-      let menu = document.querySelector(".triggerMenu");
-
-      /*  Hace que hamburguesa se mueva llama a clase "is-active" de hamburguer.css */
-      cualquiernombre.addEventListener("click", function() {
-          cualquiernombre.classList.toggle("is-active");
-      });
-      cualquiernombre.addEventListener('click', function () {
-          /* Se pone cualquier nombre entre parentesis llamando a clase en el css principal para hacer visible el menu despues pinchar hamburguesa */
-          menu.classList.toggle("hacer_menu_responsi_visible")
-      })
-   </script>
 </body>
 </html>

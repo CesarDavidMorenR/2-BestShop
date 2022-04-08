@@ -29,13 +29,34 @@ header{
    background-color: white;
 }
 
-/* Lineas para navegar en la web */
+/* Links para navegar en la web */
 
-#xq,#benefits,#price,#contact,#home{
+#xq,#benefits,#price {
     display: block;
     height: 80px; 
     margin-top: -80px; 
     /* EL margin top  negativo ANULA el height */
+}
+
+#home{
+   position: absolute;
+   top: 0;
+}
+
+/* Return to top Botton */
+
+.btn-return-top{
+    height: 50px;
+    width: 50px;
+    background-color: #08A6E4;
+    position: fixed;
+    top: 581px;
+    right: 0;
+    margin-right: 10px;
+    z-index: 2;
+    border-radius:50%;
+    opacity: 0.5;
+    transition: 200ms;
 }
 
 .titulo a{
@@ -91,7 +112,15 @@ nav ul{
  justify-content: space-between;
 }
 
-/* Parte inicial */
+/* Parte de header */
+
+.percentage-scroller {
+    height: 4px;
+    background-color: rgb(255, 0, 0);
+    position: fixed;
+    z-index: 2;
+    transition: 500ms;
+  }
 
 .princi{
    text-align: center;
@@ -469,6 +498,7 @@ article.segunda_recta {
 
      .primera_tabla:hover {
          transform: scale(1.12);
+         transition:300ms;
      }
 
      .primera_tabla h4{
@@ -498,6 +528,7 @@ article.segunda_recta {
      .segunda_tabla:hover{
         box-shadow: 5px 10px 27px #07ACE629;
         transform: scale(1.12);
+        transition: 300ms;
      }
 
      .btn-primary:hover {
@@ -511,6 +542,7 @@ article.segunda_recta {
 
      .tercera_tabla:hover{
         transform: scale(1.12);
+        transition: 300ms;
      }
 
      .tercera_tabla h4{
@@ -698,6 +730,9 @@ article.segunda_recta {
          font-family: 'Raleway', sans-serif;
          margin-left: 137px;
      }
+    .footerHome{
+        text-decoration: none;
+    }
 
      footer p{
       font-family: 'Open Sans',sans-serif;
