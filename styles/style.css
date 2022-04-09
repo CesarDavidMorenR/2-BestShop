@@ -48,15 +48,22 @@ header{
 .btn-return-top{
     height: 50px;
     width: 50px;
-    background-color: #08A6E4;
+    background-color: #07ACE6;
     position: fixed;
     top: 581px;
     right: 0;
     margin-right: 10px;
     z-index: 2;
     border-radius:50%;
+    border:none;
     opacity: 0.5;
-    transition: 200ms;
+    color:#ffffff;
+}
+
+.btn-return-top:hover{
+    background-color:red;
+    color: black;
+    opacity: 1;
 }
 
 .titulo a{
