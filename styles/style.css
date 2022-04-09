@@ -655,12 +655,11 @@ article.segunda_recta {
      }
      .fila_formu input {
          border: none;
-         border-bottom: 1px solid #95989A;
+         border-bottom: 6px solid #95989A;
          margin-top: 5px;
      }
      .fila_formu input[type="checkbox"] {
-         appearance:
-                 none;
+         appearance: none;
          width: 24px;
          height: 24px;
          display: inline-block;
