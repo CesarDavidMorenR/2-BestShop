@@ -64,6 +64,7 @@ header{
     background-color:red;
     color: black;
     opacity: 1;
+    transform: scale(1.10);
 }
 
 .titulo a{

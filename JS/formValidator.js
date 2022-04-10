@@ -6,22 +6,41 @@
  */
 
 
- 
+// Declaracion de variables globales 
+
+ const formulario = document.querySelector("#contactoForm");
+ const nombre = document.querySelector("#namee")
  const email = document.querySelector("#emaill");
- const namee = document.querySelector("#namee")
+
+
+ formulario.addEventListener("submit", function(e) {
+     e.preventDefault();
+ })
  
-let validacionNombre = (nameee)=>{
- if(nameee.length >= 3 && nameee.length <= 100){
-    namee.style.borderColor = "green";
+
+
+ // Validar nombre En rojo sino tiene el largo entre 3 y 100
+ 
+let validacionNombre = (e)=>{
+    let largo = e.target.value;
+ if(largo.length >= 3 && largo.length <= 100){
+    nombre.style.borderColor = "green";
  }else{
-     namee.style.borderColor = "red";
+     nombre.style.borderColor = "red";
  }}
 
 
+ nombre.addEventListener('change',validacionNombre)
 
-const valor = namee.innerHTML
+// Validar Correo electronico
 
-validacionNombre(valor)
+let validacionEmail = (e)=>{
+    let validation = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let nombreCorreo = e.target.value;
+ if(validation.test(nombreCorreo)){
+    email.style.borderColor = "green";
+ }else{
+     email.style.borderColor = "red";
+ }}
 
-
-
+ email.addEventListener('change',validacionEmail)
