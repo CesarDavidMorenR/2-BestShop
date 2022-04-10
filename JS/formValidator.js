@@ -8,15 +8,15 @@
 
 // Declaracion de variables globales 
 
- const formulario = document.querySelector("#contactoForm");
+/*  const formulario = document.querySelector("#contactoForm"); */
  const nombre = document.querySelector("#namee")
  const email = document.querySelector("#emaill");
 
 
- formulario.addEventListener("submit", function(e) {
+/*  formulario.addEventListener("submit", function(e) {
      e.preventDefault();
  })
- 
+  */
 
 
  // Validar nombre En rojo sino tiene el largo entre 3 y 100
