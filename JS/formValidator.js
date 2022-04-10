@@ -30,7 +30,7 @@ let validacionNombre = (e)=>{
  }}
 
 
- nombre.addEventListener('change',validacionNombre)
+ nombre.addEventListener('input',validacionNombre)
 
 // Validar Correo electronico
 
@@ -43,4 +43,19 @@ let validacionEmail = (e)=>{
      email.style.borderColor = "red";
  }}
 
- email.addEventListener('change',validacionEmail)
+ email.addEventListener('input',validacionEmail)
+
+ //Validar que checkbox a sido aceptada
+
+ let cajaCheck = document.querySelector("#checkbox");
+
+ const validacionCheck = (e) =>{
+    let compruebaCheckeo = e.target.checked; 
+    if(compruebaCheckeo === true){
+        cajaCheck.style.borderColor = "green";
+    }else{
+        cajaCheck.style.borderColor = "red";
+    }
+ }
+
+ cajaCheck.addEventListener('input',validacionCheck)
