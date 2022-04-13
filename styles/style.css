@@ -67,6 +67,28 @@ header{
     transform: scale(1.10);
 }
 
+/* Pop-Up modal */
+
+#popModal{
+    background-color: white;
+    height: 200px;
+    width: 500px;
+    margin: 0 auto;
+    color: #07ACE6;
+    border: 1px solid #08A6E4;
+    display:flex;
+    display:none;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    z-index: 5;
+    left: 600px;
+    bottom: 400px;
+}
+
+
+/* Otras etiquetas */
+
 .titulo a{
     text-decoration: none;
 }
