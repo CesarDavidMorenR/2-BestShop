@@ -1,3 +1,3 @@
-const modal = document.querySelector('#popModal');
+/* const modal = document.querySelector('#popModal');
 
-modal.addEventListener('')
+modal.addEventListener('') */
