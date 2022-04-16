@@ -7,6 +7,8 @@ const modal = document.querySelector('#popModal');
 
 const closeModal = document.querySelector('#closeModal');
 
+
+
 //Funciones
 
 const timer = () => {
@@ -18,22 +20,28 @@ const timer = () => {
     },5000)
 }
 
-const modalScrollShow = (event) => {
+const modalScrollShow = () => {
     const percentageScroll = Math.trunc((window.scrollY * 100) / (document.body.scrollHeight - window.innerHeight))
     if(percentageScroll >= 25){
         modal.classList.add("popModalVisible");
         modal.classList.remove("popModalInvisible");
-        
+
+        //Tengo que ponerla en la funcion de cierre
+        /* sessionStorage.setItem('popModal', modal.classList.add("popModalInvisible")); */
     }
 }
 
 const fcloseModal = (event) => {
-    /* event.cancelBubble = true */
+    /* event.cancelBubble = true */  
    /*  event.stopImmediatePropagation(); */
    if(event.target.matches("#closeModal") || !event.target.closest("#popModal")){
     /* modal.classList.toggle('popModalInvisible'); con toggle tenia que añadir revemove event listener descuri que con add no hace falta en los condicionales con if tampoco es obligatorio else*/
+    
     modal.classList.add('popModalInvisible');
+    
     window.removeEventListener('scroll',modalScrollShow);
+    
+    window.addEventListener('load',()=> {sessionStorage.setItem(fcloseModal, modal.classList.add("popModalInvisible")); })
   /*   document.removeEventListener('click',fcloseModal); */
    }
     /* event.stopPropagation(); */
@@ -50,6 +58,8 @@ const fcloseModal = (event) => {
 window.addEventListener('click',fcloseModal)
 
 window.addEventListener('keydown',fcloseModal)
+
+
 
 /* btnPrinci.addEventListener('click',timer) 
 // Boton de testing de la funcion

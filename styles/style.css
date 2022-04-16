@@ -43,6 +43,11 @@ header{
    top: 0;
 }
 
+.buttonPrinci:hover {
+    transition-duration: 500ms;
+    transform: scale(1.02);
+}
+
 /* Return to top Botton */
 
 .btn-return-top{
@@ -481,11 +486,26 @@ article.segunda_recta {
    margin-bottom: 100px;
      }
 
+
+/* Selector de moneda */
+
+#changeCurrency{
+    /* margin-left:500px; */
+    margin: 0 650px 50px;
+    width: 120px;
+  /*  margin: 0 10rem 50px; */
+}
+
+#selectCurrencis{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
  .precios h2 {
     text-align: center;
     font-weight: 400;
     margin-top: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     font-size: 36px;
     font-family: 'Raleway', sans-serif;
      }
