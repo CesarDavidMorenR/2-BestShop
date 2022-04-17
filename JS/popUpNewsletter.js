@@ -8,6 +8,10 @@ const modal = document.querySelector('#popModal');
 const closeModal = document.querySelector('#closeModal');
 
 
+/* let nombreee = 'davicito';
+const Prueba = 'hola ' + nombreee +' ' + 99;
+console.log(Prueba);
+console.log(typeof Prueba) */
 
 //Funciones
 
@@ -25,7 +29,6 @@ const modalScrollShow = () => {
     if(percentageScroll >= 25){
         modal.classList.add("popModalVisible");
         modal.classList.remove("popModalInvisible");
-
         //Tengo que ponerla en la funcion de cierre
         /* sessionStorage.setItem('popModal', modal.classList.add("popModalInvisible")); */
     }
@@ -38,18 +41,21 @@ const fcloseModal = (event) => {
     /* modal.classList.toggle('popModalInvisible'); con toggle tenia que añadir revemove event listener descuri que con add no hace falta en los condicionales con if tampoco es obligatorio else*/
     
     modal.classList.add('popModalInvisible');
-    
     window.removeEventListener('scroll',modalScrollShow);
+    sessionStorage.setItem('popModal', document.getElementById('#popModal').value);
     
-    window.addEventListener('load',()=> {sessionStorage.setItem(fcloseModal, modal.classList.add("popModalInvisible")); })
+     }
   /*   document.removeEventListener('click',fcloseModal); */
    }
     /* event.stopPropagation(); */
     
-}
+
 
 
 //Listeners
+
+
+
 
 /* window.addEventListener('load', timer) */
 

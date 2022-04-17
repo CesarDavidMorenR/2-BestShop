@@ -76,21 +76,24 @@ header{
 
 .popModalVisible{
     background-color: white;
-    height: 200px;
-    width: 500px;
+    height: 25%;
+    width: 50%;
+    max-width: 500px;
     margin: 0 auto;
     color: #07ACE6;
     /* border: 1px solid #08A6E4; */
     display:flex;
     /* display:none; */
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
     position: absolute;
     z-index: 5;
-    left: 600px;
-    bottom: 400px;
-    box-shadow: 0 0 20px #55DFB4;
+    left: 50%;
+    bottom: 50%;
+    box-shadow: 1px 0px 50px  #08A6E4;
     position:fixed;
+    font-size: 1rem;
+    transform: translate(-50%, -50%); /* Vi en video para cerrar modal con sessionStorage esto es para poner en el medio modal https://www.youtube.com/watch?v=K6tCkA_IRz8 */
 }
 
 .popModalInvisible {
@@ -99,17 +102,19 @@ header{
 
 #closeModal {
     position: absolute;
-    left: 419px;
-    bottom: 150px;
+    left: 88%;
+    bottom: 75%;
+   /*  transform: translate(90%, -50%); */
    border-radius: 20%;
    border: none;
-   width: 50px;
+  /*  width: 50px; */
    background-color: white;
 }
 
 #closeModal:hover{
  background-color: #08A6E4;
  border-radius: 37%;
+ transform: scale(1.33)
 }
 
 
@@ -491,7 +496,8 @@ article.segunda_recta {
 
 #changeCurrency{
     /* margin-left:500px; */
-    margin: 0 650px 50px;
+    margin: 0 46% 57px;
+   /*  transform:translate(50%,50%); */
     width: 120px;
   /*  margin: 0 10rem 50px; */
 }
