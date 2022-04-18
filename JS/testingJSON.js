@@ -16,6 +16,9 @@ const enviarJson = async (event) => {
   const valorNombre = namee.value;
   const valorEmail = emaiil.value;
 
+  const btnForm = document.getElementById('btn-Formu');
+
+  btnForm.disabled = true;
   try{
 
     // la respuesta en la misma variable
