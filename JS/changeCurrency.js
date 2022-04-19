@@ -10,3 +10,5 @@ const getDataApi = async () => {
         console.log(error)
     }
 }
+
+getDataApi();
