@@ -110,14 +110,14 @@ const fcloseModal = () => {
 
 /* Para acitvar modal por tiempo */
 
-/* window.addEventListener('load', timer)  */
+window.addEventListener('load', timer) 
 
 
 // EN este caso puede ser document o window 
-/* window.addEventListener('click',fcloseModal) */
+/* window.addEventListener('click',fcloseModal)
 
-/*  window.addEventListener('keyup', fcloseModal);  */
-
+ window.addEventListener('keyup', fcloseModal); 
+ */
 closeModal.addEventListener('click', cerrarEquis);
 modal.addEventListener('click', cerrarFuera);
 document.addEventListener('keydown', cerrarEsc); //* NOTA: aplicando el evento al modal no funciona
@@ -127,3 +127,68 @@ document.addEventListener('keydown', cerrarEsc); //* NOTA: aplicando el evento a
 */
 
 window.addEventListener('scroll',modalScrollShow)
+
+
+
+//! Validacion del email con regex. Codigo del formulario
+
+  //* Variables que necesito aquí especificamente
+  const emailModal = document.querySelector("#correo");
+
+let validacionEmailModal = (event)=>{
+    let validationCorreo = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let nombreCorreoModal = event.target.value;
+ if(validationCorreo.test(nombreCorreoModal)){
+    emailModal.style.borderColor = "green";
+ }else{
+     emailModal.style.borderColor = "red";
+ }}
+
+   //* Event listeners para email en esto ejercicio
+    emailModal.addEventListener('input',validacionEmailModal)
+
+
+//! Enviar los datos del email al JSON
+
+const enviarJsonModal = async (event) => {
+  
+    event.preventDefault();
+  // .. Recoger variables en el momento correcto... las variables que obtienen su valor de forma dinamica deben declarse justo antes de usarse no de manera global
+    
+    const valorEmailModal = emailModal.value;
+  
+    try{
+        
+      // la respuesta en la misma variable
+      const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+          
+          email: valorEmailModal,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      });
+   // En el parametro de la condicion se checkea con ok(200) si es correcto entonces se devuelve la respuesta
+      if(response.ok) {
+        
+        const jsonResponse = await response.json()
+        /* const renderResponse = (jsonResponse) => {
+          let structuredRes = JSON.stringify(jsonResponse).replace(/,/g, ", \n");
+          structuredRes = `<pre>${structuredRes}</pre>`;
+        } */
+        console.log(jsonResponse)
+        
+      }
+    }
+      catch(err) {
+        console.log(err.message)
+      } 
+      
+
+    }
+
+    const formModal = document.querySelector('#formModal')
+
+    formModal.addEventListener('submit', enviarJsonModal)

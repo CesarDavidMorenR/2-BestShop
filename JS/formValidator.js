@@ -21,8 +21,8 @@
 
  // Validar nombre En rojo sino tiene el largo entre 3 y 100
  
-let validacionNombre = (e)=>{
-    let largo = e.target.value;
+let validacionNombre = (event)=>{
+    let largo = event.target.value;
  if(largo.length >= 3 && largo.length <= 100){
     nombre.style.borderColor = "green";
  }else{
@@ -34,9 +34,9 @@ let validacionNombre = (e)=>{
 
 // Validar Correo electronico
 
-let validacionEmail = (e)=>{
+let validacionEmail = (event)=>{
     let validation = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    let nombreCorreo = e.target.value;
+    let nombreCorreo = event.target.value;
  if(validation.test(nombreCorreo)){
     email.style.borderColor = "green";
  }else{
@@ -49,8 +49,8 @@ let validacionEmail = (e)=>{
 
  let cajaCheck = document.querySelector("#checkbox");
 
- const validacionCheck = (e) =>{
-    let compruebaCheckeo = e.target.checked; 
+ const validacionCheck = (event) =>{
+    let compruebaCheckeo = event.target.checked; 
     if(compruebaCheckeo === true){
         cajaCheck.style.borderColor = "green";
     }else{
