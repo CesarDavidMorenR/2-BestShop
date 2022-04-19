@@ -4,8 +4,9 @@ const getDataApi = async () => {
         if(dataApi.ok) {
             const dataResponse = await dataApi.json();
             console.log(dataResponse)
-        }
-        throw new Error('Failed to Request Currency API')
+        } else {
+        throw new Error('Failed to Request Currency API'); 
+        } //* INVESTIGAR if without else y tambien throw new
     } catch (error) {
         console.log(error)
     }
