@@ -1,4 +1,4 @@
-// Varibles que almacenan el elmeno del
+//! Varibles que almacenan el elmeno del
 
 const modal = document.querySelector('#popModal');
 /* const btnPrinci = document.querySelector('.buttonPrinci') 
@@ -11,7 +11,8 @@ const closeModal = document.querySelector('#closeModal');
 
 const funCerrarAbrir = () =>{
 
-    if(!sessionStorage.getItem('visto')){
+    
+    if(!sessionStorage.getItem('visto')) /* getItem obtiene el setItem que cuando ejecutado esta siempre activado */ {
         modal.classList.add("popModalVisible");
         modal.classList.remove("popModalInvisible");
          // Tenia un bug porque use toggle como propiedad. Ahora uso add y no esta el bug
@@ -24,7 +25,7 @@ const Prueba = 'hola ' + nombreee +' ' + 99;
 console.log(Prueba);
 console.log(typeof Prueba) */
 
-//Funciones
+//! Funciones
 
 const timer = () => {
     setTimeout(() =>{
@@ -49,14 +50,15 @@ const modalScrollShow = () => {
 
 /* const sesionCerrada = () => {sessionStorage.setItem('popModal', modal.style.display = 'none'); } */
 
-const fcloseModal = event => {
+const fcloseModal = () => {
     /* event.cancelBubble = true */  
    /*  event.stopImmediatePropagation(); */
-   if(event.target.matches("#closeModal") || !event.target.closest(".contenidoModal") ){
+   
+
+   /* if(event.target.matches("#closeModal") || !event.target.closest(".contenidoModal") QUitan para probar funcionalidad de solo esc  ) */ {
     /* modal.classList.toggle('popModalInvisible'); con toggle tenia que añadir revemove event listener descuri que con add no hace falta en los condicionales con if tampoco es obligatorio else*/
     
     sessionStorage.setItem('visto','modalCerrado');
-    
     modal.classList.add('popModalInvisible');
     modal.classList.remove("popModalVisible");
     
@@ -82,24 +84,34 @@ const fcloseModal = event => {
     const cerrarFuera = (event) =>{
 
         
-        if(event.target == modal){
-            sessionStorage.setItem('visto','modalCerrado');
+        if(event.target == modal && event.type == 'click'){
+            sessionStorage.setItem('visto','modalCerra');
             modal.classList.add('popModalInvisible');
             modal.classList.remove("popModalVisible");
             /* funCerrarAbrir(); */
     }}
 
+    const cerrarEsc = (event) =>{
+        if(event.keyCode === 27){
+            sessionStorage.setItem('visto','modalCerra');
+            modal.classList.add('popModalInvisible');
+            modal.classList.remove("popModalVisible");
+        }
+    }
 
 
-//Listeners
+
+
+
+//! Listeners
 
 
 
 
 /* Para acitvar modal por tiempo */
 
-/* window.addEventListener('load', timer) 
- */
+/* window.addEventListener('load', timer)  */
+
 
 // EN este caso puede ser document o window 
 /* window.addEventListener('click',fcloseModal) */
@@ -108,6 +120,7 @@ const fcloseModal = event => {
 
 closeModal.addEventListener('click', cerrarEquis);
 modal.addEventListener('click', cerrarFuera);
+document.addEventListener('keydown', cerrarEsc); //* NOTA: aplicando el evento al modal no funciona
 
 /* btnPrinci.addEventListener('click',timer) 
 // Boton de testing de la funcion
