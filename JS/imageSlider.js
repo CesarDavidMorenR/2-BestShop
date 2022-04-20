@@ -1,4 +1,4 @@
-const sliderdIV = document.querySelector('#slider')
+const sliderDiv = document.querySelector('#slider')
 
 //a Día 10 - Parte 2 - JavaScript Bootcamp CodeHouse para clase y constructor A partir de min 50
 

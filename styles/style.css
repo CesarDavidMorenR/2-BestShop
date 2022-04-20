@@ -711,6 +711,32 @@ article.segunda_recta {
      .segunda_tabla li:last-child {
          list-style-image: url("../images/Close.svg");
      }
+
+
+     /*! Styles for Slider */
+     
+     #slider{
+        display: flex;
+        
+    
+     }
+     
+     #imgOne {
+        /*  position:absolute; */ 
+        margin: 0 auto;
+     }
+
+     #imgTwo {
+         /* position:absolute; */
+         display:none; 
+     }
+
+     #imgThree {
+         /* position:absolute; */
+         display: none; 
+     }
+
+
      
      
          /*styles for form*/
