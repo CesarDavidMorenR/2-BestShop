@@ -110,7 +110,7 @@ const fcloseModal = () => {
 
 /* Para acitvar modal por tiempo */
 
-window.addEventListener('load', timer) 
+/* window.addEventListener('load', timer)  */
 
 
 // EN este caso puede ser document o window 
@@ -126,7 +126,7 @@ document.addEventListener('keydown', cerrarEsc); //* NOTA: aplicando el evento a
 // Boton de testing de la funcion
 */
 
-window.addEventListener('scroll',modalScrollShow)
+/* window.addEventListener('scroll',modalScrollShow) */
 
 
 
