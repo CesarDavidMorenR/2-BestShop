@@ -2,7 +2,7 @@
 
 const getDataApi = async (event) => {
     try {
-        const dataApi = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json');
+        const dataApi = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json');
         if(dataApi.ok) {
             const dataResponse = await dataApi.json();
 
@@ -11,9 +11,9 @@ const getDataApi = async (event) => {
              //a Codigo para variables
 
             console.log(dataResponse)
-            const dollarApi = dataResponse.eur.usd;
-            const libraApi = dataResponse.eur.gbp;
-            const euroApi = dataResponse.eur.eur;
+            const dollarApi = dataResponse.usd.usd;
+            const libraApi = dataResponse.usd.gbp;
+            const euroApi = dataResponse.usd.eur;
 
             const basicPrice = document.querySelector('#basicPrice');
             const proPrice = document.querySelector('#proPrice');
@@ -24,8 +24,8 @@ const getDataApi = async (event) => {
                 case 'euro': 
 
                 basicPrice.textContent = '€0'
-                proPrice.textContent = '€' + (euroApi * (25 * dollarApi)).toPrecision(4);
-                premiumPrice.textContent = '€' + (euroApi * (60 * dollarApi)).toPrecision(4);
+                proPrice.textContent = '€' + (( 25 * dollarApi ) * euroApi).toPrecision(4);
+                premiumPrice.textContent = '€' + ((60 * dollarApi) * euroApi).toPrecision(4);
 
                 
                 break;
