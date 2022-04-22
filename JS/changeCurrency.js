@@ -10,7 +10,7 @@ const getDataApi = async (event) => {
 
              //a Codigo para variables
 
-            console.log(dataResponse)
+            console.log(dataResponse) // Para testear se ve en consola el JSON
             const dollarApi = dataResponse.usd.usd;
             const libraApi = dataResponse.usd.gbp;
             const euroApi = dataResponse.usd.eur;
@@ -66,7 +66,7 @@ const getDataApi = async (event) => {
 const listaOpciones = document.querySelector('#selectCurrencis');
 
 const euroo = (event) =>{
-    console.log(event.target.value);
+    console.log(event.target.value); //Se ve el valor del objetico del evento
     getDataApi(event);
 
 }
