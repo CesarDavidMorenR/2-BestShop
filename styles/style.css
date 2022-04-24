@@ -721,27 +721,68 @@ article.segunda_recta {
     
 
      .slider-container {
-        width: 900px;
+        width: 800px;
         height: 500px;
-        background-color: red;
+        margin: 0 auto;
         display: flex;
+        margin-bottom:500px;
+        position: relative;
+        
     }
- 
-     #imgOne {
-        /*  position:absolute; */ 
+
+    .slider__dots {
+        position: absolute;
+        top: 400px;
+        display:flex;
+        width: 600px;
+        height: 110px;
+        border-radius: 5%;
+        background-color: black;
+        justify-content: space-between;
+        
+    }
+
+    .slider__undot{
+        display:flex;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        
+    }
+
+    .slider__arrow{
+        position: absolute;
+        top: 50px;
+        left: 500px;
         display: flex;
-     }
+        width: 500px;
+        height: 50px;
+        background-color: yellow;
 
-     #imgTwo {
-         /* position:absolute; */
-         display:none; 
-     }
+    }
 
-     #imgThree {
-         /* position:absolute; */
-         display: none; 
-     }
+     .slider__arrow--left{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+    
+     .slider__arrow--right{
+        height: 50px;
+        width: 100px;
+        background-color: coral;
+    }  
 
+
+.slider_image-active {
+    display: none;
+}
+
+.slider_dot-active {
+    display: block;
+    background-color: blue;
+}
 
      
      
