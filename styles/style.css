@@ -11,6 +11,58 @@
     
 }
 
+/* Scroll 5   https://codepen.io/zkreations/pen/bZRgqd https://onaircode.com/html-css-custom-scrollbar-examples/ */
+::-webkit-scrollbar {
+    width: 15px;
+    
+  }
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.1);
+  }
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #00aeff, #a68eff);
+    border-radius: 10px;
+  }
+/* ::-webkit-scrollbar-button{
+ 
+   
+  }
+ */
+/* Buttons https://stackoverflow.com/questions/40512026/no-arrow-buttons-in-scrollbar-after-writing-webkit-css/46229219#46229219  */
+/* ::-webkit-scrollbar-button
+{
+  border-style: solid;
+  height: 16px;
+  width: 16px;
+}
+ */
+
+/* Up   */
+/* ::-webkit-scrollbar-button:vertical:decrement
+{
+  border-width: 0 7px 14px 7px;
+  border-color: transparent transparent #404040 transparent;
+}
+ */
+/* ::-webkit-scrollbar-button:vertical:decrement:hover
+{
+  border-color: transparent transparent #505050 transparent;
+}
+ */
+
+/* Down */
+/* ::-webkit-scrollbar-button:vertical:increment
+{
+  border-width: 14px 7px 0 7px;
+  border-color: #404040 transparent transparent transparent;
+}
+ */
+/* ::-webkit-scrollbar-button:vertical:increment:hover
+{
+  border-color: #505050 transparent transparent transparent;
+} */
+
 html{
    /* font-size: 1rem; */
    font-size: 16px;
@@ -659,6 +711,111 @@ article.segunda_recta {
      .segunda_tabla li:last-child {
          list-style-image: url("../images/Close.svg");
      }
+
+
+     /*! Styles for Slider */
+/*      
+     #slider{
+      
+     } */
+    
+
+     .slider-container {
+        display: block;
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom:100px;
+        position: relative;
+        
+    }
+
+    .slider__dots {
+        position: absolute;
+        top: 400px;
+        display:flex;
+        width: 700px;
+        height: 50px;
+        justify-content: space-evenly;
+        
+    }
+
+    .slider__undot{
+        display:block;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(149, 149, 149);
+        border-radius: 50%;
+        
+    }
+
+    .slider__arrow{
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(40, 210, 80);
+        border-radius: 50%;
+        border-color: blue;
+
+    }
+
+     .slider__arrow--left{
+         left: 20px;
+        background-color: rgb(157, 19, 255);
+    }
+
+    .slider__arrow--left::after{
+        content:"";
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-left:2px solid blue;
+        border-top: 2px solid blue;
+        transform: rotate(-45deg);
+        margin-left: 12px;
+
+    }
+    
+     .slider__arrow--right{
+         right: 20px;
+        background-color: coral;
+    }  
+
+     .slider__arrow--right::after{
+        content:"";
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-right:2px solid blue;
+        border-bottom: 2px solid blue;
+        transform: rotate(-45deg);
+        margin-left: 10px ;
+
+    } 
+
+
+.img-slider{
+    display:none;
+} 
+
+.slider_image-active {
+    display: block;
+    
+}
+
+/* img{
+    display: none;
+} */
+
+
+
+.slider_dot-active {
+    background-color: rgb(251, 33, 13);
+}
+
      
      
          /*styles for form*/
@@ -1211,6 +1368,22 @@ article.segunda_recta {
    .tercera_tabla{
        height: 251px;
    }
+
+
+/* Slider */
+.slider-container {
+    width: 300px; 
+}
+
+.slider__dots {
+    width: 300px;
+}
+
+.slider_image-active {
+ width:300px;
+}
+
+
 
 /* contact seccion */
 

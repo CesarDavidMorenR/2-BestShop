@@ -110,7 +110,7 @@ const fcloseModal = () => {
 
 /* Para acitvar modal por tiempo */
 
-window.addEventListener('load', timer) 
+/* window.addEventListener('load', timer)  */
 
 
 // EN este caso puede ser document o window 
@@ -126,7 +126,7 @@ document.addEventListener('keydown', cerrarEsc); //* NOTA: aplicando el evento a
 // Boton de testing de la funcion
 */
 
-window.addEventListener('scroll',modalScrollShow)
+window.addEventListener('scroll',modalScrollShow) 
 
 
 
@@ -156,6 +156,10 @@ const enviarJsonModal = async (event) => {
   // .. Recoger variables en el momento correcto... las variables que obtienen su valor de forma dinamica deben declarse justo antes de usarse no de manera global
     
     const valorEmailModal = emailModal.value;
+    let validationCorreo = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+
+    if(validationCorreo.test(valorEmailModal)){
   
     try{
         
@@ -179,12 +183,15 @@ const enviarJsonModal = async (event) => {
           structuredRes = `<pre>${structuredRes}</pre>`;
         } */
         console.log(jsonResponse)
+        alert(`Success. Our newsletter will arrive at ${jsonResponse.email}`)
         
       }
     }
       catch(err) {
         console.log(err.message)
-      } 
+      } }else {
+        alert('Correo en formato incorrecto')
+      }
       
 
     }
