@@ -1,4 +1,4 @@
-# Web Paga make with: HTML, CSS and soon JavaScript
+# Web Paga make with: HTML, CSS and JavaScript
 
 Live Demo: https://davidmorenodev.github.io/2-BestShop/
 
