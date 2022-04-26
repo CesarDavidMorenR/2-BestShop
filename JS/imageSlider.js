@@ -36,7 +36,6 @@ class Slider {
                 maxHeight = height;
             }
             return maxHeight;
-
         }
     }
 
@@ -57,7 +56,7 @@ class Slider {
     }
         this.slider.appendChild(dotsContainer);
 
-   }
+    }
 
    createArrows() {
        const leftArrow = document.createElement('button');
@@ -104,8 +103,7 @@ prevImage() {
     }
 }
 
-
-}
+ }
 
 const eslaider = new Slider('slider'); // Puede declararse la instancia sin almacenarse en una variable (Investigar porque). Se ejecuta el codigo al delcara la instancia
 
