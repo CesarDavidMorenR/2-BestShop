@@ -803,6 +803,7 @@ article.segunda_recta {
 
 .slider_image-active {
     display: block;
+    
 }
 
 /* img{
@@ -1367,6 +1368,22 @@ article.segunda_recta {
    .tercera_tabla{
        height: 251px;
    }
+
+
+/* Slider */
+.slider-container {
+    width: 300px; 
+}
+
+.slider__dots {
+    width: 300px;
+}
+
+.slider_image-active {
+ width:300px;
+}
+
+
 
 /* contact seccion */
 
