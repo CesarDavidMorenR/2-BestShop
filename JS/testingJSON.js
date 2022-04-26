@@ -18,7 +18,12 @@ const enviarJson = async (event) => {
 
   const btnForm = document.getElementById('btn-Formu');
 
-  btnForm.disabled = true;
+  let validation = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  let cajaCheck = document.querySelector("#checkbox");
+  let compruebaCheckeo = cajaCheck.checked; 
+
+if((valorNombre.length >= 3 && valorNombre.length <= 100) && (validation.test(valorEmail)) && compruebaCheckeo === true){
   try{
 
     // la respuesta en la misma variable
@@ -40,13 +45,19 @@ const enviarJson = async (event) => {
         structuredRes = `<pre>${structuredRes}</pre>`;
       } */
       console.log(jsonResponse)
+      alert(`Envio de datos correctos. El nombre recibido es:${jsonResponse.nombre} y su email enviado es: ${jsonResponse.email}`)
+       btnForm.disabled = true; 
     }
   }
     catch(err) {
       console.log(err.message)
     }  
 
-  }
+    
+}else{
+  alert('Please confirm your consent and/or check if yout email and/or name are on incorrect format, correct that and please try again')
+    
+   } }
 
 
 const formulario = document.querySelector("#contactoForm");
@@ -55,5 +66,8 @@ const formulario = document.querySelector("#contactoForm");
 
 
 // cuando el parametro de la funcion fetch asyncrona es el evento "event" y solo el evento para llamar a la funcion no se llama con las parentesis
-formulario.addEventListener("submit", enviarJson);
+
+
+  formulario.addEventListener("submit", enviarJson); 
+
 
