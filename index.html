@@ -15,7 +15,13 @@
    <script src="./JS/hamburguerJS.js" defer></script>
    <script src="./JS/percentage-scroller.js" defer></script>
    <script src="./JS/returnToTop.js" defer></script>
-   <script src="https://polyfill.io/v3/polyfill.min.js" async></script> <!-- Polyfills provide a way to support newer web features on older browsers. 
+   <script src="./JS/formValidator.js" defer></script>
+   <script src="./JS/testingJSON.js" defer></script>
+   <script src="./JS/popUpNewsletter.js" defer></script>
+   <script src="./JS/changeCurrency.js" defer></script>
+   <script src="./JS/imageSlider.js" defer></script>
+   
+   <!-- <script src="https://polyfill.io/v3/polyfill.min.js" async></script>  --><!-- Polyfills provide a way to support newer web features on older browsers. 
 BROWSER COMPATIBILITY
 Polyfills
 It’s difficult to keep track of which CSS properties are not supported in certain browsers and their versions. Polyfills are JavaScript codes that allow older browsers to behave as though they understand more advanced features than they actually do. These codes rewrite the HTML and CSS codes to simulate features that have not yet been adopted by that version of the browser.
@@ -68,16 +74,33 @@ Now that we are familiar with the syntax and logic of feature queries and some b
      </div>
      <div class="percentage-scroller"></div>
    </header>
-   
+
+   <div id="popModal" class="popModalInvisible" >
+    <div class="contenidoModal" >
+        <button id="closeModal">❌</button>
+        <p>Subscribe to our newsletter</p>
+        <form id="formModal" action="POST">
+            <label for="correo">Introduce tu correo</label>
+            <input type="text" id="correo" name="correo" placeholder="ex@ex.com">
+            <button class="btn-Modal" type="submit">Suscribirse</button>
+        </form>
+    </div>
+</div>
+
+ 
    <main class="princi">
-    <button  class="btn-return-top"></button>
+    <button  class="btn-return-top">Up</button>
+
+
             <section class="cajita_general">
                 <span id="home"></span>
                <h1 class="tituPrinci">Sell More!</h1>
                <h2 class="titu2Princi">Open shop on our platform and increase your sales</h2>
-               <button class="buttonPrinci">Open your shop</button>
+               <a href="./openYourShop.html"> <button class="buttonPrinci">Open your shop</button></a>
             </section>
             <img  class="imgorde" src="./images/Background.png" alt="imagen fondo" width="100%">
+
+
 
    </main>
       
@@ -89,6 +112,7 @@ Now that we are familiar with the syntax and logic of feature queries and some b
                   <circle cx="32.085" cy="31.355" r="31.355" fill="#FB3B64"/>
                   </svg>
                   <p class="num">100000+</p> <br>
+                  <!-- Para JS en formValidator.js <p class="prueba"  >dasdsagdasd</p> -->
                   <p class="letter">daily entries</p>
                </article>
                <article class="twhyus_columna_ojopalo"><img class="ojopalo" src="./images/Eye.png" alt="ojo palo"><svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,13 +177,22 @@ Now that we are familiar with the syntax and logic of feature queries and some b
       
    <section class="precios">
        <span id="price"></span>
+       <h2>Pricing</h2>
+
       <div class="cajita_general">
-          <h2>Pricing</h2>
+        <section id="changeCurrency">
+            <label for="selectCurrencis">Change Currency</h5>
+            <select name="selectCurrencis" id="selectCurrencis">
+                <option  value="euro">EUR</option>
+                <option  selected value="dollar">USD</option>
+                <option value="libra">GBP</option>
+            </select>
+        </section>
           <div class="tablas">
               <div class="tabla primera_tabla">
                   <div>
                       <h3>Basic</h3>
-                      <h4>$0</h4>
+                      <h4 id="basicPrice">$0</h4>
                   </div>
                   <div>
                       <ul>
@@ -175,7 +208,7 @@ Now that we are familiar with the syntax and logic of feature queries and some b
               <div class="tabla segunda_tabla">
                   <div>
                       <h3>Professional</h3>
-                      <h4>$25</h4>
+                      <h4 id="proPrice">$25</h4>
                       <p>Limited offer</p>
                   </div>
                   <div>
@@ -192,7 +225,7 @@ Now that we are familiar with the syntax and logic of feature queries and some b
               <div class="tabla tercera_tabla">
                   <div>
                       <h3>Premium</h3>
-                      <h4>$60</h4>
+                      <h4 id="premiumPrice">$60</h4>
                       <p>Limited offer</p>
                   </div>
                   <div>
@@ -209,6 +242,17 @@ Now that we are familiar with the syntax and logic of feature queries and some b
           </div>
       </div>
    </section>
+
+
+<div id="slider">
+
+<img class="img-slider" id="imgOne" src="https://th.bing.com/th/id/R.a8d9ed1ec6713ed4ca3ea83d0c40368f?rik=zPhnhgnDQpY2CQ&pid=ImgRaw&r=0" width="700px" height="500px" alt="demostracion tienda">
+
+<img class="img-slider" id="imgTwo" src="https://img.perzonalization.com/wp-content/uploads/2018/01/eCommerce-Marketing-blog.png"  width="700px" height="500px" alt="imagen vectorial de ecommerce">
+
+<img class="img-slider" id="imgThree" src="https://th.bing.com/th/id/R.27590719931c51da9b6e3685f93944dc?rik=hOydBw58guw4Mg&riu=http%3a%2f%2filluminationconsulting.com%2fwp-content%2fuploads%2f2020%2f03%2fHow-to-increase-ecommerce-sales-1024x512.png&ehk=MBDXRbjRPss8BD9O4PGCmSBIqBWlrw7ePkuJKjILFMo%3d&risl=&pid=ImgRaw&r=0" width="700px" height="500px" alt="imagen vectorial de ordenador y movil para ecommerce">
+
+</div>
 
    <section class="form_contacto">
       <div class="cajita_general">
@@ -230,14 +274,16 @@ Now that we are familiar with the syntax and logic of feature queries and some b
               </div>
           </div>
           <div class="form_contacto_formu">
-                  <form action="./index.html" method="POST">
+                  <form id="contactoForm" action="POST" >
                       <div class="fila_formu">
-                          <label for="name">NAME</label>
-                          <input minlength="2" maxlength="100" required type="text" id="name" name="name">
+                          <label for="namee">NAME</label>
+                          <input type="text" id="namee" name="namee">
+                          <small></small>
                       </div>
                       <div class="fila_formu">
-                          <label for="email">EMAIL</label>
-                          <input type="email" id="email" name="email">
+                          <label for="emaill">EMAIL</label>
+                          <input type="email" id="emaill" name="emaill">
+                          <small></small>
                       </div>
                       <div class="checkeo">
                           <div class="fila_formu">
@@ -247,7 +293,7 @@ Now that we are familiar with the syntax and logic of feature queries and some b
                               I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
                           </label>
                       </div>
-                      <button>Send</button>
+                      <button id="btn-Formu" type="submit">Send</button>
                   </form>
           </div>
       </div>
