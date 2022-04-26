@@ -15,20 +15,20 @@ class Slider {
         this.activeImage = this.images[this.activeIndex];
         this.activeDot = this.dots[this.activeIndex];
         this.showImage(0);
-       /*  this.interval = null; */
+        /* this.interval = null;  */
         this.startInterval();
         
     }
 
     startInterval() {
-        clearInterval(this.interval);
+        /* clearInterval(this.interval); */
         this.invterval = setInterval(() => {
             this.nextImage();
-        }, 5000);
+        }, 3700);
     }
 
     maximumImageHeight() {
-        let maxHeight = 0;
+        let maxHeight = 500;
         for (let image of this.images) {
             image.style['max-width'] = '100%';
             const height = image.offsetHeight;
@@ -49,7 +49,7 @@ class Slider {
             dot.dataset.index = i;
             dot.className = 'slider__undot'
             dot.addEventListener('click', (event) => {
-                this.startInterval();
+               /*  this.startInterval(); */
                 this.showImage(parseInt(event.target.dataset.index));
             });
             dotsContainer.appendChild(dot);
@@ -65,7 +65,7 @@ class Slider {
        this.slider.appendChild(leftArrow);
        leftArrow.addEventListener('click', () =>{
            this.prevImage();
-           this.startInterval();
+          /*  this.startInterval(); */
        });
        
        
@@ -74,7 +74,7 @@ class Slider {
        this.slider.appendChild(rightArrow);
        rightArrow.addEventListener('click', () =>{
            this.nextImage();
-           this.startInterval();
+           /* this.startInterval(); */
        });
    }
 
