@@ -128,6 +128,7 @@ header{
 
 .popModalVisible{
     background-color: rgba(242, 243, 255, 0.732);
+    text-align: center;
     height: 100%;
     width: 100%;
     /* max-width: 500px; */
@@ -154,6 +155,7 @@ header{
 .contenidoModal{
     position:relative;
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction:column;
@@ -163,14 +165,25 @@ header{
     box-shadow: 0px 0px 10px  #08A6E4;
     border: 1px solid #07ACE6;
     padding: 10px;
+    
 }
 
-.btn-Modal{
+#formModal{
+ display: block;
+ width: 75%;
+}
+
+#correo{
+width: 100%;
+}
+
+ .btn-Modal{
     background-color:#07ACE6;
     color: white;
-    margin-left: 40%;
+    border-color: blue;
     margin-top: 20px;
-}
+    padding: 5px;
+} 
 
 .popModalInvisible {
     display: none;
@@ -1377,6 +1390,8 @@ article.segunda_recta {
 
 .slider__dots {
     width: 300px;
+
+    
 }
 
 .slider_image-active {
@@ -1384,6 +1399,17 @@ article.segunda_recta {
 }
 
 
+/*  Modal */
+
+/* .btn-Modal {
+margin-left: 5%;
+} */
+
+
+/* .modalHeaderText{
+    text-align: center;
+}
+ */
 
 /* contact seccion */
 
