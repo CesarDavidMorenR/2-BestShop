@@ -110,7 +110,7 @@ const fcloseModal = () => {
 
 /*a Para acitvar modal por tiempo */
 
- window.addEventListener('load', timer)  
+ window.addEventListener('load', timer) 
 
 
 // EN este caso puede ser document o window 
