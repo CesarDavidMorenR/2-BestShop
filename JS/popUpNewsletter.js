@@ -31,7 +31,7 @@ const timer = () => {
     setTimeout(() =>{
      funCerrarAbrir();
     
-    },5000)
+    },3000)
 }
 
 const modalScrollShow = () => {
@@ -108,9 +108,9 @@ const fcloseModal = () => {
 
 
 
-/* Para acitvar modal por tiempo */
+/*a Para acitvar modal por tiempo */
 
-/* window.addEventListener('load', timer)  */
+ window.addEventListener('load', timer)  
 
 
 // EN este caso puede ser document o window 
