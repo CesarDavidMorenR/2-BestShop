@@ -24,8 +24,8 @@ const getDataApi = async (event) => {
                 case 'euro': 
 
                 basicPrice.textContent = '€0'
-                proPrice.textContent = '€' + (( 25 * dollarApi ) * euroApi).toPrecision(4);
-                premiumPrice.textContent = '€' + ((60 * dollarApi) * euroApi).toPrecision(4);
+                proPrice.textContent = '€' + Math.ceil(( 25 * dollarApi ) * euroApi);
+                premiumPrice.textContent = '€' + Math.ceil((60 * dollarApi) * euroApi);
 
                 
                 break;
@@ -41,8 +41,8 @@ const getDataApi = async (event) => {
                 case 'libra' :
 
                     basicPrice.textContent = '£0'
-                    proPrice.textContent = '£' + (libraApi * (25 * dollarApi)).toPrecision(4);
-                    premiumPrice.textContent =  '£' + (libraApi * (60 * dollarApi)).toPrecision(4);
+                    proPrice.textContent = '£' + Math.ceil(libraApi * (25 * dollarApi));
+                    premiumPrice.textContent =  '£' + Math.ceil(libraApi * (60 * dollarApi));
             }
 
     /*      // Primer codigo para prbar las funcionalidades y ver que funciona luego decido hacer switch   if(event.target.value == 'euro'){
