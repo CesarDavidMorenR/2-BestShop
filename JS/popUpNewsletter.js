@@ -31,7 +31,7 @@ const timer = () => {
     setTimeout(() =>{
      funCerrarAbrir();
     
-    },3000)
+    },200)
 }
 
 const modalScrollShow = () => {
@@ -110,7 +110,7 @@ const fcloseModal = () => {
 
 /*a Para acitvar modal por tiempo */
 
- window.addEventListener('load', timer) 
+  window.addEventListener('load', timer) 
 
 
 // EN este caso puede ser document o window 
@@ -118,15 +118,16 @@ const fcloseModal = () => {
 
  window.addEventListener('keyup', fcloseModal); 
  */
-closeModal.addEventListener('click', cerrarEquis);
-modal.addEventListener('click', cerrarFuera);
-document.addEventListener('keydown', cerrarEsc); //* NOTA: aplicando el evento al modal no funciona
+// closeModal.addEventListener('click', cerrarEquis);
+// modal.addEventListener('click', cerrarFuera);
+// document.addEventListener('keydown', cerrarEsc);
+//* NOTA: aplicando el evento al modal no funciona
 
 /* btnPrinci.addEventListener('click',timer) 
 // Boton de testing de la funcion
 */
 
-window.addEventListener('scroll',modalScrollShow) 
+// window.addEventListener('scroll',modalScrollShow) 
 
 
 

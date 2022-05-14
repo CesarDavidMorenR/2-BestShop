@@ -75,12 +75,14 @@ Now that we are familiar with the syntax and logic of feature queries and some b
      <div class="percentage-scroller"></div>
    </header>
 
-   <div id="popModal" class="popModalInvisible" >
+<div id="popModal"  class="popModalInvisible" >
     <div class="contenidoModal" >
         <button id="closeModal">❌</button>
         <form id="formModal" action="POST">
-            <p class="modalHeaderText">Subscribe to our newsletter</p>
-            <label for="correo">Write your email</label>
+            <section class="formModalText">
+                <p class="modalHeaderText">Subscribe to our newsletter</p>
+                <label for="correo">Write your email</label>
+            </section>
             <input type="text" id="correo" name="correo" placeholder="ex@ex.com">
             <button class="btn-Modal" type="submit">Suscribe</button>
         </form>
